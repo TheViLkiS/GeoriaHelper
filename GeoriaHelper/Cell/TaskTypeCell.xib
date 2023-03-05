@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="201" id="KGk-i7-Jjw" customClass="TaskTypeCell" customModule="GeoriaHelper" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="409" height="201"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="409" height="201"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="Название" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKH-OC-b25">
+                        <rect key="frame" x="19.999999999999993" y="21" width="93.333333333333314" height="24"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Описание" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jEB-vu-R7R">
+                        <rect key="frame" x="20" y="60" width="369" height="80"/>
+                        <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                        <color key="textColor" systemColor="systemGrayColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sbk-oN-td2">
+                        <rect key="frame" x="234" y="143" width="64" height="54"/>
+                        <color key="tintColor" red="0.33964656282585648" green="0.58523247634472564" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="google100"/>
+                        <connections>
+                            <action selector="openURLGoogle" destination="KGk-i7-Jjw" eventType="touchUpInside" id="b1C-iT-6QG"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tq6-zk-RWN">
+                        <rect key="frame" x="354" y="11" width="35" height="39"/>
+                        <color key="tintColor" systemColor="labelColor"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="F" buttonSize="medium">
+                            <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="21"/>
+                        </buttonConfiguration>
+                        <connections>
+                            <action selector="favoriteButton" destination="KGk-i7-Jjw" eventType="touchUpInside" id="KPy-EJ-eDg"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJX-2J-pnt">
+                        <rect key="frame" x="72" y="145.66666666666666" width="57.333333333333343" height="47.333333333333343"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="inst100"/>
+                        <connections>
+                            <action selector="openURLInstagram" destination="KGk-i7-Jjw" eventType="touchUpInside" id="V9z-TO-eBp"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9w-yH-LET">
+                        <rect key="frame" x="129.33333333333334" y="147.66666666666666" width="52.333333333333343" height="42.333333333333343"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="face100"/>
+                        <connections>
+                            <action selector="openURLFacebook" destination="KGk-i7-Jjw" eventType="touchUpInside" id="EZP-UZ-c0e"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbY-Jh-01U">
+                        <rect key="frame" x="181.66666666666666" y="147.66666666666666" width="52.333333333333343" height="42.333333333333343"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="www80"/>
+                        <connections>
+                            <action selector="openURLSite" destination="KGk-i7-Jjw" eventType="touchUpInside" id="YVJ-Sl-O5h"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PhQ-5L-bUD">
+                        <rect key="frame" x="20" y="148" width="52" height="42"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="telegram"/>
+                        <connections>
+                            <action selector="openURLtelegram" destination="KGk-i7-Jjw" eventType="touchUpInside" id="4oS-fO-COY"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="260" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oEq-GT-5Bl">
+                        <rect key="frame" x="298" y="146.66666666666666" width="57.333333333333314" height="47.333333333333343"/>
+                        <color key="tintColor" systemColor="systemPinkColor"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="yandex100"/>
+                        <connections>
+                            <action selector="openURLYandex" destination="KGk-i7-Jjw" eventType="touchUpInside" id="PaX-tJ-1fF"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jEB-vu-R7R" firstAttribute="top" secondItem="bKH-OC-b25" secondAttribute="bottom" constant="15" id="04W-4a-01z"/>
+                    <constraint firstItem="jEB-vu-R7R" firstAttribute="top" secondItem="Tq6-zk-RWN" secondAttribute="bottom" constant="10" id="0Er-SH-Rg6"/>
+                    <constraint firstItem="VJX-2J-pnt" firstAttribute="leading" secondItem="PhQ-5L-bUD" secondAttribute="trailing" id="1NL-Yo-UMz"/>
+                    <constraint firstItem="h9w-yH-LET" firstAttribute="leading" secondItem="VJX-2J-pnt" secondAttribute="trailing" id="3zB-6e-lyA"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="wbY-Jh-01U" secondAttribute="bottom" id="4z9-xk-xjg"/>
+                    <constraint firstItem="jEB-vu-R7R" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="6se-1X-fGk"/>
+                    <constraint firstItem="Sbk-oN-td2" firstAttribute="leading" secondItem="wbY-Jh-01U" secondAttribute="trailing" id="ATP-Bt-0nu"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="PhQ-5L-bUD" secondAttribute="bottom" id="BJF-Fa-3Gg"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Sbk-oN-td2" secondAttribute="bottom" constant="-7" id="DbM-iB-u02"/>
+                    <constraint firstItem="PhQ-5L-bUD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Ipb-GT-nJQ"/>
+                    <constraint firstItem="bKH-OC-b25" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Ke1-pe-2bC"/>
+                    <constraint firstItem="jEB-vu-R7R" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="LC1-Aj-aZ5"/>
+                    <constraint firstItem="jEB-vu-R7R" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" constant="-50" id="N4c-el-hIZ"/>
+                    <constraint firstItem="bKH-OC-b25" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="QbB-Ow-qoG"/>
+                    <constraint firstItem="wbY-Jh-01U" firstAttribute="leading" secondItem="h9w-yH-LET" secondAttribute="trailing" id="QlL-vu-XYl"/>
+                    <constraint firstItem="oEq-GT-5Bl" firstAttribute="leading" secondItem="Sbk-oN-td2" secondAttribute="trailing" id="UFT-XZ-kfc"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Tq6-zk-RWN" secondAttribute="trailing" id="URU-RN-RUs"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="VJX-2J-pnt" secondAttribute="bottom" constant="-3" id="d36-pA-3UD"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="oEq-GT-5Bl" secondAttribute="bottom" constant="-4" id="hkb-iU-4tB"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="h9w-yH-LET" secondAttribute="bottom" id="sMe-K5-UIi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="facebook" destination="h9w-yH-LET" id="P9P-iA-mWj"/>
+                <outlet property="favorites" destination="Tq6-zk-RWN" id="l7b-Pv-rPd"/>
+                <outlet property="google" destination="Sbk-oN-td2" id="qAF-gJ-dj3"/>
+                <outlet property="instagram" destination="VJX-2J-pnt" id="geK-be-vHf"/>
+                <outlet property="site" destination="wbY-Jh-01U" id="ECD-h3-dx3"/>
+                <outlet property="telegram" destination="PhQ-5L-bUD" id="mGE-4U-h1B"/>
+                <outlet property="typeDescription" destination="jEB-vu-R7R" id="dXa-cq-vyB"/>
+                <outlet property="typeTitle" destination="bKH-OC-b25" id="0d4-K1-JPv"/>
+                <outlet property="yandex" destination="oEq-GT-5Bl" id="neK-GU-k7F"/>
+            </connections>
+            <point key="canvasLocation" x="40.458015267175568" y="35.563380281690144"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="face100" width="28.333333969116211" height="28.333333969116211"/>
+        <image name="google100" width="40" height="40"/>
+        <image name="inst100" width="33.333332061767578" height="33.333332061767578"/>
+        <image name="telegram" width="28.333333969116211" height="28.333333969116211"/>
+        <image name="www80" width="28.333333969116211" height="28.333333969116211"/>
+        <image name="yandex100" width="33.333332061767578" height="33.333332061767578"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

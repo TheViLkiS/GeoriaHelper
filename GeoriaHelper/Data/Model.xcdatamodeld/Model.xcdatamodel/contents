@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21512" systemVersion="21G217" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Entity" representedClassName="Entity" syncable="YES" codeGenerationType="class">
+        <attribute name="attribute" optional="YES" attributeType="String"/>
+        <attribute name="attribute1" optional="YES"/>
+        <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Entity" inverseName="relationship" inverseEntity="Entity"/>
+        <fetchedProperty name="fetchedPropertdsfy1" optional="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="Entity" predicateString="sdf"/>
+        </fetchedProperty>
+        <fetchedProperty name="fetchedProperty" optional="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="Entity" predicateString="hikjh"/>
+        </fetchedProperty>
+        <fetchedProperty name="wef" optional="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="Entity"/>
+        </fetchedProperty>
+    </entity>
+</model>

@@ -7,15 +7,221 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		940B522229B1EEEB001DC037 /* ForAllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940B522129B1EEEB001DC037 /* ForAllViewController.swift */; };
+		941C1CE529AF4D3D00C39BB9 /* ViewControllerTGRent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941C1CE429AF4D3D00C39BB9 /* ViewControllerTGRent.swift */; };
+		9420AA772989551E0014809B /* RentTelegram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9420AA762989551E0014809B /* RentTelegram.swift */; };
+		9420AA79298955920014809B /* CafeRest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9420AA78298955920014809B /* CafeRest.swift */; };
+		9420AA7B298956150014809B /* VeganCafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9420AA7A298956150014809B /* VeganCafe.swift */; };
+		9420AA7D29895BE20014809B /* PopUpRentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9420AA7C29895BE20014809B /* PopUpRentViewController.swift */; };
+		9420AA7F298962CB0014809B /* TableViewControllerTGRent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9420AA7E298962CB0014809B /* TableViewControllerTGRent.swift */; };
+		9420AA812989648B0014809B /* ViewControllerPUBars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9420AA802989648B0014809B /* ViewControllerPUBars.swift */; };
+		9420AA88298968FD0014809B /* TableViewControllerCafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9420AA87298968FD0014809B /* TableViewControllerCafe.swift */; };
+		9420AA8A2989690B0014809B /* TableViewControllerVegan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9420AA892989690B0014809B /* TableViewControllerVegan.swift */; };
+		943BC0BD298008E500058B3C /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943BC0BC298008E500058B3C /* Content.swift */; };
+		943BC0BF298012C500058B3C /* TableViewControllerBars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943BC0BE298012C500058B3C /* TableViewControllerBars.swift */; };
+		943BC0C1298122BD00058B3C /* TableViewControllerFavorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943BC0C0298122BD00058B3C /* TableViewControllerFavorites.swift */; };
+		943F226929B4B10700BD8069 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943F226829B4B10700BD8069 /* TaskCell.swift */; };
+		94500818298FEFB000785F3D /* mesta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94500817298FEFB000785F3D /* mesta.swift */; };
+		9450081A298FF11100785F3D /* parkiIOzera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94500819298FF11100785F3D /* parkiIOzera.swift */; };
+		9450081C298FF31900785F3D /* sobori.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9450081B298FF31900785F3D /* sobori.swift */; };
+		9450081E298FF43100785F3D /* drugoe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9450081D298FF43100785F3D /* drugoe.swift */; };
+		94500821298FFAC200785F3D /* transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94500820298FFAC200785F3D /* transport.swift */; };
+		94500824298FFDDE00785F3D /* saloniKrasoti.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94500823298FFDDE00785F3D /* saloniKrasoti.swift */; };
+		9450082629900F3600785F3D /* barber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9450082529900F3600785F3D /* barber.swift */; };
+		945008282990126100785F3D /* nogti.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945008272990126100785F3D /* nogti.swift */; };
+		9450082A299013CD00785F3D /* spa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94500829299013CD00785F3D /* spa.swift */; };
+		9450082C299014F500785F3D /* sportzal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9450082B299014F500785F3D /* sportzal.swift */; };
+		9450082F299016F600785F3D /* veterinar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9450082E299016F600785F3D /* veterinar.swift */; };
+		94500831299019A600785F3D /* zoomagazini.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94500830299019A600785F3D /* zoomagazini.swift */; };
+		9450083329901B7F00785F3D /* grooming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9450083229901B7F00785F3D /* grooming.swift */; };
+		9450083629901FB700785F3D /* operatori.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9450083529901FB700785F3D /* operatori.swift */; };
+		945008392990212100785F3D /* banks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945008382990212100785F3D /* banks.swift */; };
+		9450083B2990E7AA00785F3D /* faqBanks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9450083A2990E7AA00785F3D /* faqBanks.swift */; };
+		9450083E2990E8F900785F3D /* moneyTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9450083D2990E8F900785F3D /* moneyTransfer.swift */; };
+		945008412990EADD00785F3D /* polikliniki.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945008402990EADD00785F3D /* polikliniki.swift */; };
+		945008432990EBD700785F3D /* dental.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945008422990EBD700785F3D /* dental.swift */; };
+		945008452990F07800785F3D /* strahovki.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945008442990F07800785F3D /* strahovki.swift */; };
+		945008482990F23000785F3D /* schoolRU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945008472990F23000785F3D /* schoolRU.swift */; };
+		9450084A2990F35000785F3D /* schoolEng.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945008492990F35000785F3D /* schoolEng.swift */; };
+		9450084C2990F66500785F3D /* sadRu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9450084B2990F66500785F3D /* sadRu.swift */; };
+		9450084E2990F75900785F3D /* sadEng.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9450084D2990F75900785F3D /* sadEng.swift */; };
+		9450085129914CEC00785F3D /* rentCars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9450085029914CEC00785F3D /* rentCars.swift */; };
+		9450085329914EF400785F3D /* carService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9450085229914EF400785F3D /* carService.swift */; };
+		945008582991518900785F3D /* faqCars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945008572991518900785F3D /* faqCars.swift */; };
+		9450085A2991586700785F3D /* buyCars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945008592991586700785F3D /* buyCars.swift */; };
+		9450085D29915AE400785F3D /* afisha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9450085C29915AE400785F3D /* afisha.swift */; };
+		9450085F29915C7800785F3D /* clubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9450085E29915C7800785F3D /* clubs.swift */; };
+		9450086129915DFC00785F3D /* kinoteatr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9450086029915DFC00785F3D /* kinoteatr.swift */; };
+		9450086329915EAC00785F3D /* teatre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9450086229915EAC00785F3D /* teatre.swift */; };
+		9450086529915F9100785F3D /* malls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9450086429915F9100785F3D /* malls.swift */; };
+		9450086A299162B500785F3D /* vnz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94500869299162B500785F3D /* vnz.swift */; };
+		9450086C2991631700785F3D /* grajdanstvo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9450086B2991631700785F3D /* grajdanstvo.swift */; };
+		9450086E2991636E00785F3D /* ip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9450086D2991636E00785F3D /* ip.swift */; };
+		945008752992BCFF00785F3D /* TableViewControllerMesta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945008742992BCFF00785F3D /* TableViewControllerMesta.swift */; };
+		945008772992BD1000785F3D /* TableViewControllerParkiIOzera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945008762992BD1000785F3D /* TableViewControllerParkiIOzera.swift */; };
+		945008792992BD1C00785F3D /* TableViewControllerSobori.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945008782992BD1C00785F3D /* TableViewControllerSobori.swift */; };
+		9450087B2992BD2700785F3D /* TableViewControllerDrugoe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9450087A2992BD2700785F3D /* TableViewControllerDrugoe.swift */; };
+		9450087D2992BFC200785F3D /* ViewControllerPUDostopr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9450087C2992BFC200785F3D /* ViewControllerPUDostopr.swift */; };
+		945008802993D62D00785F3D /* TableViewControllerTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9450087F2993D62D00785F3D /* TableViewControllerTransport.swift */; };
+		945008832993D7F200785F3D /* TableViewControllerSaloniKras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945008822993D7F200785F3D /* TableViewControllerSaloniKras.swift */; };
+		945008852993D7FF00785F3D /* TableViewControllerBarbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945008842993D7FF00785F3D /* TableViewControllerBarbers.swift */; };
+		945008872993D80A00785F3D /* TableViewControllerNogti.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945008862993D80A00785F3D /* TableViewControllerNogti.swift */; };
+		945008892993D81300785F3D /* TableViewControllerSpa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945008882993D81300785F3D /* TableViewControllerSpa.swift */; };
+		9450088B2993D81D00785F3D /* TableViewControllerSportzal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9450088A2993D81D00785F3D /* TableViewControllerSportzal.swift */; };
+		9450088D2993DB2200785F3D /* ViewControllerPUUhodZa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9450088C2993DB2200785F3D /* ViewControllerPUUhodZa.swift */; };
+		945008922993E32800785F3D /* TableViewControllerVeterinar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945008912993E32800785F3D /* TableViewControllerVeterinar.swift */; };
+		945008942993E33700785F3D /* TableViewControllerZoomagazin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945008932993E33700785F3D /* TableViewControllerZoomagazin.swift */; };
+		945008962993E34300785F3D /* TableViewControllerGrooming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945008952993E34300785F3D /* TableViewControllerGrooming.swift */; };
+		945008982993E42C00785F3D /* ViewControllerPUForPets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945008972993E42C00785F3D /* ViewControllerPUForPets.swift */; };
+		9450089B2994108C00785F3D /* TableViewControllerBanks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9450089A2994108C00785F3D /* TableViewControllerBanks.swift */; };
+		9450089D2994109C00785F3D /* TableViewControllerFaqBanks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9450089C2994109C00785F3D /* TableViewControllerFaqBanks.swift */; };
+		9450089F299410A800785F3D /* TableViewControllerMoneyTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9450089E299410A800785F3D /* TableViewControllerMoneyTransfer.swift */; };
+		945008A12994118500785F3D /* ViewControllerPUBanks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945008A02994118500785F3D /* ViewControllerPUBanks.swift */; };
+		945008A42994224600785F3D /* TableViewControllerPolikliniki.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945008A32994224600785F3D /* TableViewControllerPolikliniki.swift */; };
+		945008A62994225200785F3D /* TableViewControllerDental.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945008A52994225200785F3D /* TableViewControllerDental.swift */; };
+		945008A82994226100785F3D /* TableViewControllerStrahovki.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945008A72994226100785F3D /* TableViewControllerStrahovki.swift */; };
+		945008AA299423EB00785F3D /* ViewControllerBolnici.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945008A9299423EB00785F3D /* ViewControllerBolnici.swift */; };
+		945008AD2994CA2900785F3D /* TableViewControllerSchoolRu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945008AC2994CA2900785F3D /* TableViewControllerSchoolRu.swift */; };
+		945008AF2994CA3400785F3D /* TableViewControllerSchoolEng.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945008AE2994CA3400785F3D /* TableViewControllerSchoolEng.swift */; };
+		945008B12994CA3F00785F3D /* TableViewControllerSadRu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945008B02994CA3F00785F3D /* TableViewControllerSadRu.swift */; };
+		945008B32994CA4A00785F3D /* TableViewControllerSadEng.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945008B22994CA4A00785F3D /* TableViewControllerSadEng.swift */; };
+		945008B52994CAEE00785F3D /* ViewControllerPUSchool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945008B42994CAEE00785F3D /* ViewControllerPUSchool.swift */; };
+		945008B82994D7A600785F3D /* TableViewControllerRentCars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945008B72994D7A600785F3D /* TableViewControllerRentCars.swift */; };
+		945008BA2994D7B900785F3D /* TableViewControllerCarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945008B92994D7B900785F3D /* TableViewControllerCarService.swift */; };
+		945008BC2994D7CD00785F3D /* TableViewControllerFaqCars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945008BB2994D7CD00785F3D /* TableViewControllerFaqCars.swift */; };
+		945008BE2994D7D800785F3D /* TableViewControllerBuyCars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945008BD2994D7D800785F3D /* TableViewControllerBuyCars.swift */; };
+		945008C02994DA5700785F3D /* ViewControllerPUCars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945008BF2994DA5700785F3D /* ViewControllerPUCars.swift */; };
+		9471754E297E7BAC00B9B4A1 /* TaskTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471754C297E7BAC00B9B4A1 /* TaskTypeCell.swift */; };
+		9471754F297E7BAC00B9B4A1 /* TaskTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9471754D297E7BAC00B9B4A1 /* TaskTypeCell.xib */; };
+		947930282994DF0F003490F0 /* TableViewControllerAfisha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947930272994DF0F003490F0 /* TableViewControllerAfisha.swift */; };
+		9479302A2994DF19003490F0 /* TableViewControllerClubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947930292994DF19003490F0 /* TableViewControllerClubs.swift */; };
+		9479302C2994DF89003490F0 /* TableViewControllerKinotatr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9479302B2994DF89003490F0 /* TableViewControllerKinotatr.swift */; };
+		9479302E2994DF9B003490F0 /* TableViewControllerTeatre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9479302D2994DF9B003490F0 /* TableViewControllerTeatre.swift */; };
+		947930302994DFB1003490F0 /* TableViewControllerMalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9479302F2994DFB1003490F0 /* TableViewControllerMalls.swift */; };
+		947930322994E156003490F0 /* ViewControllerPURazvlechenia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947930312994E156003490F0 /* ViewControllerPURazvlechenia.swift */; };
+		947BFF2729865D570035CCED /* PanelTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947BFF2629865D570035CCED /* PanelTransition.swift */; };
+		947BFF292986670D0035CCED /* ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947BFF282986670D0035CCED /* ChildViewController.swift */; };
+		947BFF2B2986B27A0035CCED /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947BFF2A2986B27A0035CCED /* PresentationController.swift */; };
+		947BFF2D2986B29E0035CCED /* DimmPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947BFF2C2986B29E0035CCED /* DimmPresentationController.swift */; };
+		947BFF2F2986B2D30035CCED /* DismissAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947BFF2E2986B2D30035CCED /* DismissAnimation.swift */; };
+		947BFF312986B3090035CCED /* TransitionDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947BFF302986B3090035CCED /* TransitionDriver.swift */; };
+		947BFF332986B3660035CCED /* InstantPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947BFF322986B3660035CCED /* InstantPanGestureRecognizer.swift */; };
 		94BDB7682976BC98002577ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BDB7672976BC98002577ED /* AppDelegate.swift */; };
 		94BDB76A2976BC98002577ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BDB7692976BC98002577ED /* SceneDelegate.swift */; };
 		94BDB76C2976BC98002577ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BDB76B2976BC98002577ED /* ViewController.swift */; };
 		94BDB76F2976BC98002577ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94BDB76D2976BC98002577ED /* Main.storyboard */; };
 		94BDB7712976BC99002577ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94BDB7702976BC99002577ED /* Assets.xcassets */; };
 		94BDB7742976BC99002577ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94BDB7722976BC99002577ED /* LaunchScreen.storyboard */; };
+		94BDB79E297A8183002577ED /* ViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BDB79D297A8183002577ED /* ViewControllerTwo.swift */; };
+		94BDB7A0297A8221002577ED /* DesignSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BDB79F297A8221002577ED /* DesignSettings.swift */; };
+		94BDB7A2297D287B002577ED /* TableViewControllerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BDB7A1297D287B002577ED /* TableViewControllerHome.swift */; };
+		94D7C8522982823100A510CC /* Rent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D7C8512982823100A510CC /* Rent.swift */; };
+		94D7C85429828CB900A510CC /* Bars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D7C85329828CB900A510CC /* Bars.swift */; };
+		94ECAC5329880F2500A9D55B /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ECAC5229880F2500A9D55B /* MenuCollectionViewCell.swift */; };
+		94ECAC5629880FB100A9D55B /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ECAC5529880FB100A9D55B /* CollectionViewController.swift */; };
+		94ECAC59298811B600A9D55B /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ECAC58298811B600A9D55B /* Menu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		940B522129B1EEEB001DC037 /* ForAllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForAllViewController.swift; sourceTree = "<group>"; };
+		941C1CE429AF4D3D00C39BB9 /* ViewControllerTGRent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTGRent.swift; sourceTree = "<group>"; };
+		9420AA762989551E0014809B /* RentTelegram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentTelegram.swift; sourceTree = "<group>"; };
+		9420AA78298955920014809B /* CafeRest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeRest.swift; sourceTree = "<group>"; };
+		9420AA7A298956150014809B /* VeganCafe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeganCafe.swift; sourceTree = "<group>"; };
+		9420AA7C29895BE20014809B /* PopUpRentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpRentViewController.swift; sourceTree = "<group>"; };
+		9420AA7E298962CB0014809B /* TableViewControllerTGRent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerTGRent.swift; sourceTree = "<group>"; };
+		9420AA802989648B0014809B /* ViewControllerPUBars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPUBars.swift; sourceTree = "<group>"; };
+		9420AA87298968FD0014809B /* TableViewControllerCafe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerCafe.swift; sourceTree = "<group>"; };
+		9420AA892989690B0014809B /* TableViewControllerVegan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerVegan.swift; sourceTree = "<group>"; };
+		943BC0BC298008E500058B3C /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
+		943BC0BE298012C500058B3C /* TableViewControllerBars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerBars.swift; sourceTree = "<group>"; };
+		943BC0C0298122BD00058B3C /* TableViewControllerFavorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerFavorites.swift; sourceTree = "<group>"; };
+		943F226829B4B10700BD8069 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		94500817298FEFB000785F3D /* mesta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mesta.swift; sourceTree = "<group>"; };
+		94500819298FF11100785F3D /* parkiIOzera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parkiIOzera.swift; sourceTree = "<group>"; };
+		9450081B298FF31900785F3D /* sobori.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sobori.swift; sourceTree = "<group>"; };
+		9450081D298FF43100785F3D /* drugoe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drugoe.swift; sourceTree = "<group>"; };
+		94500820298FFAC200785F3D /* transport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transport.swift; sourceTree = "<group>"; };
+		94500823298FFDDE00785F3D /* saloniKrasoti.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = saloniKrasoti.swift; sourceTree = "<group>"; };
+		9450082529900F3600785F3D /* barber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = barber.swift; sourceTree = "<group>"; };
+		945008272990126100785F3D /* nogti.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nogti.swift; sourceTree = "<group>"; };
+		94500829299013CD00785F3D /* spa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spa.swift; sourceTree = "<group>"; };
+		9450082B299014F500785F3D /* sportzal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sportzal.swift; sourceTree = "<group>"; };
+		9450082E299016F600785F3D /* veterinar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = veterinar.swift; sourceTree = "<group>"; };
+		94500830299019A600785F3D /* zoomagazini.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zoomagazini.swift; sourceTree = "<group>"; };
+		9450083229901B7F00785F3D /* grooming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grooming.swift; sourceTree = "<group>"; };
+		9450083529901FB700785F3D /* operatori.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = operatori.swift; sourceTree = "<group>"; };
+		945008382990212100785F3D /* banks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = banks.swift; sourceTree = "<group>"; };
+		9450083A2990E7AA00785F3D /* faqBanks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = faqBanks.swift; sourceTree = "<group>"; };
+		9450083D2990E8F900785F3D /* moneyTransfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moneyTransfer.swift; sourceTree = "<group>"; };
+		945008402990EADD00785F3D /* polikliniki.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = polikliniki.swift; sourceTree = "<group>"; };
+		945008422990EBD700785F3D /* dental.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dental.swift; sourceTree = "<group>"; };
+		945008442990F07800785F3D /* strahovki.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = strahovki.swift; sourceTree = "<group>"; };
+		945008472990F23000785F3D /* schoolRU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = schoolRU.swift; sourceTree = "<group>"; };
+		945008492990F35000785F3D /* schoolEng.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = schoolEng.swift; sourceTree = "<group>"; };
+		9450084B2990F66500785F3D /* sadRu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sadRu.swift; sourceTree = "<group>"; };
+		9450084D2990F75900785F3D /* sadEng.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sadEng.swift; sourceTree = "<group>"; };
+		9450085029914CEC00785F3D /* rentCars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rentCars.swift; sourceTree = "<group>"; };
+		9450085229914EF400785F3D /* carService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carService.swift; sourceTree = "<group>"; };
+		945008572991518900785F3D /* faqCars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = faqCars.swift; sourceTree = "<group>"; };
+		945008592991586700785F3D /* buyCars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buyCars.swift; sourceTree = "<group>"; };
+		9450085C29915AE400785F3D /* afisha.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = afisha.swift; sourceTree = "<group>"; };
+		9450085E29915C7800785F3D /* clubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clubs.swift; sourceTree = "<group>"; };
+		9450086029915DFC00785F3D /* kinoteatr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kinoteatr.swift; sourceTree = "<group>"; };
+		9450086229915EAC00785F3D /* teatre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teatre.swift; sourceTree = "<group>"; };
+		9450086429915F9100785F3D /* malls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = malls.swift; sourceTree = "<group>"; };
+		94500869299162B500785F3D /* vnz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vnz.swift; sourceTree = "<group>"; };
+		9450086B2991631700785F3D /* grajdanstvo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grajdanstvo.swift; sourceTree = "<group>"; };
+		9450086D2991636E00785F3D /* ip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ip.swift; sourceTree = "<group>"; };
+		945008742992BCFF00785F3D /* TableViewControllerMesta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerMesta.swift; sourceTree = "<group>"; };
+		945008762992BD1000785F3D /* TableViewControllerParkiIOzera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerParkiIOzera.swift; sourceTree = "<group>"; };
+		945008782992BD1C00785F3D /* TableViewControllerSobori.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerSobori.swift; sourceTree = "<group>"; };
+		9450087A2992BD2700785F3D /* TableViewControllerDrugoe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerDrugoe.swift; sourceTree = "<group>"; };
+		9450087C2992BFC200785F3D /* ViewControllerPUDostopr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPUDostopr.swift; sourceTree = "<group>"; };
+		9450087F2993D62D00785F3D /* TableViewControllerTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerTransport.swift; sourceTree = "<group>"; };
+		945008822993D7F200785F3D /* TableViewControllerSaloniKras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerSaloniKras.swift; sourceTree = "<group>"; };
+		945008842993D7FF00785F3D /* TableViewControllerBarbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerBarbers.swift; sourceTree = "<group>"; };
+		945008862993D80A00785F3D /* TableViewControllerNogti.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerNogti.swift; sourceTree = "<group>"; };
+		945008882993D81300785F3D /* TableViewControllerSpa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerSpa.swift; sourceTree = "<group>"; };
+		9450088A2993D81D00785F3D /* TableViewControllerSportzal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerSportzal.swift; sourceTree = "<group>"; };
+		9450088C2993DB2200785F3D /* ViewControllerPUUhodZa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPUUhodZa.swift; sourceTree = "<group>"; };
+		945008912993E32800785F3D /* TableViewControllerVeterinar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerVeterinar.swift; sourceTree = "<group>"; };
+		945008932993E33700785F3D /* TableViewControllerZoomagazin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerZoomagazin.swift; sourceTree = "<group>"; };
+		945008952993E34300785F3D /* TableViewControllerGrooming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerGrooming.swift; sourceTree = "<group>"; };
+		945008972993E42C00785F3D /* ViewControllerPUForPets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPUForPets.swift; sourceTree = "<group>"; };
+		9450089A2994108C00785F3D /* TableViewControllerBanks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerBanks.swift; sourceTree = "<group>"; };
+		9450089C2994109C00785F3D /* TableViewControllerFaqBanks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerFaqBanks.swift; sourceTree = "<group>"; };
+		9450089E299410A800785F3D /* TableViewControllerMoneyTransfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerMoneyTransfer.swift; sourceTree = "<group>"; };
+		945008A02994118500785F3D /* ViewControllerPUBanks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPUBanks.swift; sourceTree = "<group>"; };
+		945008A32994224600785F3D /* TableViewControllerPolikliniki.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerPolikliniki.swift; sourceTree = "<group>"; };
+		945008A52994225200785F3D /* TableViewControllerDental.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerDental.swift; sourceTree = "<group>"; };
+		945008A72994226100785F3D /* TableViewControllerStrahovki.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerStrahovki.swift; sourceTree = "<group>"; };
+		945008A9299423EB00785F3D /* ViewControllerBolnici.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBolnici.swift; sourceTree = "<group>"; };
+		945008AC2994CA2900785F3D /* TableViewControllerSchoolRu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerSchoolRu.swift; sourceTree = "<group>"; };
+		945008AE2994CA3400785F3D /* TableViewControllerSchoolEng.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerSchoolEng.swift; sourceTree = "<group>"; };
+		945008B02994CA3F00785F3D /* TableViewControllerSadRu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerSadRu.swift; sourceTree = "<group>"; };
+		945008B22994CA4A00785F3D /* TableViewControllerSadEng.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerSadEng.swift; sourceTree = "<group>"; };
+		945008B42994CAEE00785F3D /* ViewControllerPUSchool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPUSchool.swift; sourceTree = "<group>"; };
+		945008B72994D7A600785F3D /* TableViewControllerRentCars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerRentCars.swift; sourceTree = "<group>"; };
+		945008B92994D7B900785F3D /* TableViewControllerCarService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerCarService.swift; sourceTree = "<group>"; };
+		945008BB2994D7CD00785F3D /* TableViewControllerFaqCars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerFaqCars.swift; sourceTree = "<group>"; };
+		945008BD2994D7D800785F3D /* TableViewControllerBuyCars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerBuyCars.swift; sourceTree = "<group>"; };
+		945008BF2994DA5700785F3D /* ViewControllerPUCars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPUCars.swift; sourceTree = "<group>"; };
+		9471754C297E7BAC00B9B4A1 /* TaskTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTypeCell.swift; sourceTree = "<group>"; };
+		9471754D297E7BAC00B9B4A1 /* TaskTypeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTypeCell.xib; sourceTree = "<group>"; };
+		947930272994DF0F003490F0 /* TableViewControllerAfisha.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerAfisha.swift; sourceTree = "<group>"; };
+		947930292994DF19003490F0 /* TableViewControllerClubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerClubs.swift; sourceTree = "<group>"; };
+		9479302B2994DF89003490F0 /* TableViewControllerKinotatr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerKinotatr.swift; sourceTree = "<group>"; };
+		9479302D2994DF9B003490F0 /* TableViewControllerTeatre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerTeatre.swift; sourceTree = "<group>"; };
+		9479302F2994DFB1003490F0 /* TableViewControllerMalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerMalls.swift; sourceTree = "<group>"; };
+		947930312994E156003490F0 /* ViewControllerPURazvlechenia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPURazvlechenia.swift; sourceTree = "<group>"; };
+		947BFF2629865D570035CCED /* PanelTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelTransition.swift; sourceTree = "<group>"; };
+		947BFF282986670D0035CCED /* ChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildViewController.swift; sourceTree = "<group>"; };
+		947BFF2A2986B27A0035CCED /* PresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationController.swift; sourceTree = "<group>"; };
+		947BFF2C2986B29E0035CCED /* DimmPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimmPresentationController.swift; sourceTree = "<group>"; };
+		947BFF2E2986B2D30035CCED /* DismissAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissAnimation.swift; sourceTree = "<group>"; };
+		947BFF302986B3090035CCED /* TransitionDriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionDriver.swift; sourceTree = "<group>"; };
+		947BFF322986B3660035CCED /* InstantPanGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantPanGestureRecognizer.swift; sourceTree = "<group>"; };
 		94BDB7642976BC98002577ED /* GeoriaHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoriaHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94BDB7672976BC98002577ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94BDB7692976BC98002577ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +230,14 @@
 		94BDB7702976BC99002577ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94BDB7732976BC99002577ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94BDB7752976BC99002577ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94BDB79D297A8183002577ED /* ViewControllerTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTwo.swift; sourceTree = "<group>"; };
+		94BDB79F297A8221002577ED /* DesignSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSettings.swift; sourceTree = "<group>"; };
+		94BDB7A1297D287B002577ED /* TableViewControllerHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerHome.swift; sourceTree = "<group>"; };
+		94D7C8512982823100A510CC /* Rent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rent.swift; sourceTree = "<group>"; };
+		94D7C85329828CB900A510CC /* Bars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bars.swift; sourceTree = "<group>"; };
+		94ECAC5229880F2500A9D55B /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		94ECAC5529880FB100A9D55B /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		94ECAC58298811B600A9D55B /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +251,319 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9420AA83298968430014809B /* Dodo prepare */ = {
+			isa = PBXGroup;
+			children = (
+				947BFF282986670D0035CCED /* ChildViewController.swift */,
+				947BFF2629865D570035CCED /* PanelTransition.swift */,
+				947BFF2A2986B27A0035CCED /* PresentationController.swift */,
+				947BFF2C2986B29E0035CCED /* DimmPresentationController.swift */,
+				947BFF2E2986B2D30035CCED /* DismissAnimation.swift */,
+				947BFF302986B3090035CCED /* TransitionDriver.swift */,
+				947BFF322986B3660035CCED /* InstantPanGestureRecognizer.swift */,
+			);
+			path = "Dodo prepare";
+			sourceTree = "<group>";
+		};
+		9420AA84298968800014809B /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				943BC0C0298122BD00058B3C /* TableViewControllerFavorites.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		9420AA85298968890014809B /* Rent */ = {
+			isa = PBXGroup;
+			children = (
+				94BDB7A1297D287B002577ED /* TableViewControllerHome.swift */,
+				9420AA7E298962CB0014809B /* TableViewControllerTGRent.swift */,
+				941C1CE429AF4D3D00C39BB9 /* ViewControllerTGRent.swift */,
+			);
+			path = Rent;
+			sourceTree = "<group>";
+		};
+		9420AA86298968970014809B /* Bar,Rest,Veg */ = {
+			isa = PBXGroup;
+			children = (
+				9420AA87298968FD0014809B /* TableViewControllerCafe.swift */,
+				943BC0BE298012C500058B3C /* TableViewControllerBars.swift */,
+				9420AA892989690B0014809B /* TableViewControllerVegan.swift */,
+			);
+			path = "Bar,Rest,Veg";
+			sourceTree = "<group>";
+		};
+		9448B00E2987AC9900351DF4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9471754C297E7BAC00B9B4A1 /* TaskTypeCell.swift */,
+				9471754D297E7BAC00B9B4A1 /* TaskTypeCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		94500814298FEF4600785F3D /* Arenda */ = {
+			isa = PBXGroup;
+			children = (
+				94D7C8512982823100A510CC /* Rent.swift */,
+				9420AA762989551E0014809B /* RentTelegram.swift */,
+			);
+			path = Arenda;
+			sourceTree = "<group>";
+		};
+		94500815298FEF6200785F3D /* Cafe, Bars, Rest */ = {
+			isa = PBXGroup;
+			children = (
+				94D7C85329828CB900A510CC /* Bars.swift */,
+				9420AA78298955920014809B /* CafeRest.swift */,
+				9420AA7A298956150014809B /* VeganCafe.swift */,
+			);
+			path = "Cafe, Bars, Rest";
+			sourceTree = "<group>";
+		};
+		94500816298FEF8500785F3D /* Dostoprime4atelnosti */ = {
+			isa = PBXGroup;
+			children = (
+				94500817298FEFB000785F3D /* mesta.swift */,
+				94500819298FF11100785F3D /* parkiIOzera.swift */,
+				9450081B298FF31900785F3D /* sobori.swift */,
+				9450081D298FF43100785F3D /* drugoe.swift */,
+			);
+			path = Dostoprime4atelnosti;
+			sourceTree = "<group>";
+		};
+		9450081F298FFA9100785F3D /* Transport */ = {
+			isa = PBXGroup;
+			children = (
+				94500820298FFAC200785F3D /* transport.swift */,
+			);
+			path = Transport;
+			sourceTree = "<group>";
+		};
+		94500822298FFDC300785F3D /* UhodZaSoboi */ = {
+			isa = PBXGroup;
+			children = (
+				94500823298FFDDE00785F3D /* saloniKrasoti.swift */,
+				9450082529900F3600785F3D /* barber.swift */,
+				945008272990126100785F3D /* nogti.swift */,
+				94500829299013CD00785F3D /* spa.swift */,
+				9450082B299014F500785F3D /* sportzal.swift */,
+			);
+			path = UhodZaSoboi;
+			sourceTree = "<group>";
+		};
+		9450082D299016DC00785F3D /* For Pets */ = {
+			isa = PBXGroup;
+			children = (
+				9450082E299016F600785F3D /* veterinar.swift */,
+				94500830299019A600785F3D /* zoomagazini.swift */,
+				9450083229901B7F00785F3D /* grooming.swift */,
+			);
+			path = "For Pets";
+			sourceTree = "<group>";
+		};
+		9450083429901F9A00785F3D /* operatori */ = {
+			isa = PBXGroup;
+			children = (
+				9450083529901FB700785F3D /* operatori.swift */,
+			);
+			path = operatori;
+			sourceTree = "<group>";
+		};
+		94500837299020CC00785F3D /* banks */ = {
+			isa = PBXGroup;
+			children = (
+				9450083C2990E8D800785F3D /* moneyTransfer */,
+				945008382990212100785F3D /* banks.swift */,
+				9450083A2990E7AA00785F3D /* faqBanks.swift */,
+			);
+			path = banks;
+			sourceTree = "<group>";
+		};
+		9450083C2990E8D800785F3D /* moneyTransfer */ = {
+			isa = PBXGroup;
+			children = (
+				9450083D2990E8F900785F3D /* moneyTransfer.swift */,
+			);
+			path = moneyTransfer;
+			sourceTree = "<group>";
+		};
+		9450083F2990EACB00785F3D /* bolnici */ = {
+			isa = PBXGroup;
+			children = (
+				945008402990EADD00785F3D /* polikliniki.swift */,
+				945008422990EBD700785F3D /* dental.swift */,
+				945008442990F07800785F3D /* strahovki.swift */,
+			);
+			path = bolnici;
+			sourceTree = "<group>";
+		};
+		945008462990F22400785F3D /* schkoli */ = {
+			isa = PBXGroup;
+			children = (
+				945008472990F23000785F3D /* schoolRU.swift */,
+				945008492990F35000785F3D /* schoolEng.swift */,
+				9450084B2990F66500785F3D /* sadRu.swift */,
+				9450084D2990F75900785F3D /* sadEng.swift */,
+			);
+			path = schkoli;
+			sourceTree = "<group>";
+		};
+		9450084F29914CE000785F3D /* cars */ = {
+			isa = PBXGroup;
+			children = (
+				9450085029914CEC00785F3D /* rentCars.swift */,
+				9450085229914EF400785F3D /* carService.swift */,
+				945008572991518900785F3D /* faqCars.swift */,
+				945008592991586700785F3D /* buyCars.swift */,
+			);
+			path = cars;
+			sourceTree = "<group>";
+		};
+		9450085B29915AD000785F3D /* razvlechenia */ = {
+			isa = PBXGroup;
+			children = (
+				9450085C29915AE400785F3D /* afisha.swift */,
+				9450085E29915C7800785F3D /* clubs.swift */,
+				9450086029915DFC00785F3D /* kinoteatr.swift */,
+				9450086229915EAC00785F3D /* teatre.swift */,
+				9450086429915F9100785F3D /* malls.swift */,
+			);
+			path = razvlechenia;
+			sourceTree = "<group>";
+		};
+		94500868299162A500785F3D /* VNZ */ = {
+			isa = PBXGroup;
+			children = (
+				94500869299162B500785F3D /* vnz.swift */,
+				9450086B2991631700785F3D /* grajdanstvo.swift */,
+				9450086D2991636E00785F3D /* ip.swift */,
+			);
+			path = VNZ;
+			sourceTree = "<group>";
+		};
+		9450086F2992B52300785F3D /* Dostoprimechatelnosti */ = {
+			isa = PBXGroup;
+			children = (
+				945008742992BCFF00785F3D /* TableViewControllerMesta.swift */,
+				945008762992BD1000785F3D /* TableViewControllerParkiIOzera.swift */,
+				945008782992BD1C00785F3D /* TableViewControllerSobori.swift */,
+				9450087A2992BD2700785F3D /* TableViewControllerDrugoe.swift */,
+			);
+			path = Dostoprimechatelnosti;
+			sourceTree = "<group>";
+		};
+		9450087E2993D61800785F3D /* Transport */ = {
+			isa = PBXGroup;
+			children = (
+				9450087F2993D62D00785F3D /* TableViewControllerTransport.swift */,
+			);
+			path = Transport;
+			sourceTree = "<group>";
+		};
+		945008812993D7D900785F3D /* UhodZaSoboi */ = {
+			isa = PBXGroup;
+			children = (
+				945008822993D7F200785F3D /* TableViewControllerSaloniKras.swift */,
+				945008842993D7FF00785F3D /* TableViewControllerBarbers.swift */,
+				945008862993D80A00785F3D /* TableViewControllerNogti.swift */,
+				945008882993D81300785F3D /* TableViewControllerSpa.swift */,
+				9450088A2993D81D00785F3D /* TableViewControllerSportzal.swift */,
+			);
+			path = UhodZaSoboi;
+			sourceTree = "<group>";
+		};
+		9450088E2993E2ED00785F3D /* ForPets */ = {
+			isa = PBXGroup;
+			children = (
+				945008912993E32800785F3D /* TableViewControllerVeterinar.swift */,
+				945008932993E33700785F3D /* TableViewControllerZoomagazin.swift */,
+				945008952993E34300785F3D /* TableViewControllerGrooming.swift */,
+			);
+			path = ForPets;
+			sourceTree = "<group>";
+		};
+		945008992994105C00785F3D /* Banks */ = {
+			isa = PBXGroup;
+			children = (
+				9450089A2994108C00785F3D /* TableViewControllerBanks.swift */,
+				9450089C2994109C00785F3D /* TableViewControllerFaqBanks.swift */,
+				9450089E299410A800785F3D /* TableViewControllerMoneyTransfer.swift */,
+			);
+			path = Banks;
+			sourceTree = "<group>";
+		};
+		945008A22994222800785F3D /* Bolnici */ = {
+			isa = PBXGroup;
+			children = (
+				945008A32994224600785F3D /* TableViewControllerPolikliniki.swift */,
+				945008A52994225200785F3D /* TableViewControllerDental.swift */,
+				945008A72994226100785F3D /* TableViewControllerStrahovki.swift */,
+			);
+			path = Bolnici;
+			sourceTree = "<group>";
+		};
+		945008AB2994CA0300785F3D /* Schkoli */ = {
+			isa = PBXGroup;
+			children = (
+				945008AC2994CA2900785F3D /* TableViewControllerSchoolRu.swift */,
+				945008AE2994CA3400785F3D /* TableViewControllerSchoolEng.swift */,
+				945008B02994CA3F00785F3D /* TableViewControllerSadRu.swift */,
+				945008B22994CA4A00785F3D /* TableViewControllerSadEng.swift */,
+			);
+			path = Schkoli;
+			sourceTree = "<group>";
+		};
+		945008B62994D78C00785F3D /* Cars */ = {
+			isa = PBXGroup;
+			children = (
+				945008B72994D7A600785F3D /* TableViewControllerRentCars.swift */,
+				945008B92994D7B900785F3D /* TableViewControllerCarService.swift */,
+				945008BB2994D7CD00785F3D /* TableViewControllerFaqCars.swift */,
+				945008BD2994D7D800785F3D /* TableViewControllerBuyCars.swift */,
+			);
+			path = Cars;
+			sourceTree = "<group>";
+		};
+		947930262994DEF6003490F0 /* Razvlechenia */ = {
+			isa = PBXGroup;
+			children = (
+				947930272994DF0F003490F0 /* TableViewControllerAfisha.swift */,
+				947930292994DF19003490F0 /* TableViewControllerClubs.swift */,
+				9479302B2994DF89003490F0 /* TableViewControllerKinotatr.swift */,
+				9479302D2994DF9B003490F0 /* TableViewControllerTeatre.swift */,
+				9479302F2994DFB1003490F0 /* TableViewControllerMalls.swift */,
+			);
+			path = Razvlechenia;
+			sourceTree = "<group>";
+		};
+		947BFF222986547E0035CCED /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				94BDB76B2976BC98002577ED /* ViewController.swift */,
+				94BDB79D297A8183002577ED /* ViewControllerTwo.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		947BFF2529865D440035CCED /* POP Dodo */ = {
+			isa = PBXGroup;
+			children = (
+				9420AA83298968430014809B /* Dodo prepare */,
+				9420AA7C29895BE20014809B /* PopUpRentViewController.swift */,
+				9420AA802989648B0014809B /* ViewControllerPUBars.swift */,
+				9450087C2992BFC200785F3D /* ViewControllerPUDostopr.swift */,
+				9450088C2993DB2200785F3D /* ViewControllerPUUhodZa.swift */,
+				945008972993E42C00785F3D /* ViewControllerPUForPets.swift */,
+				945008A02994118500785F3D /* ViewControllerPUBanks.swift */,
+				945008A9299423EB00785F3D /* ViewControllerBolnici.swift */,
+				945008B42994CAEE00785F3D /* ViewControllerPUSchool.swift */,
+				945008BF2994DA5700785F3D /* ViewControllerPUCars.swift */,
+				947930312994E156003490F0 /* ViewControllerPURazvlechenia.swift */,
+			);
+			path = "POP Dodo";
+			sourceTree = "<group>";
+		};
 		94BDB75B2976BC98002577ED = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +583,81 @@
 		94BDB7662976BC98002577ED /* GeoriaHelper */ = {
 			isa = PBXGroup;
 			children = (
+				94ECAC5429880F9700A9D55B /* CollectionView */,
+				9448B00E2987AC9900351DF4 /* Cell */,
+				94D7C8502982821300A510CC /* Data */,
+				947BFF2529865D440035CCED /* POP Dodo */,
+				947BFF222986547E0035CCED /* VC */,
+				94D7C85529828D1500A510CC /* TableView */,
+				94BDB79F297A8221002577ED /* DesignSettings.swift */,
 				94BDB7672976BC98002577ED /* AppDelegate.swift */,
+				943BC0BC298008E500058B3C /* Content.swift */,
+				943F226829B4B10700BD8069 /* TaskCell.swift */,
 				94BDB7692976BC98002577ED /* SceneDelegate.swift */,
-				94BDB76B2976BC98002577ED /* ViewController.swift */,
 				94BDB76D2976BC98002577ED /* Main.storyboard */,
 				94BDB7702976BC99002577ED /* Assets.xcassets */,
 				94BDB7722976BC99002577ED /* LaunchScreen.storyboard */,
 				94BDB7752976BC99002577ED /* Info.plist */,
+				940B522129B1EEEB001DC037 /* ForAllViewController.swift */,
 			);
 			path = GeoriaHelper;
+			sourceTree = "<group>";
+		};
+		94D7C8502982821300A510CC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9450083429901F9A00785F3D /* operatori */,
+				94500868299162A500785F3D /* VNZ */,
+				9450085B29915AD000785F3D /* razvlechenia */,
+				9450084F29914CE000785F3D /* cars */,
+				945008462990F22400785F3D /* schkoli */,
+				9450083F2990EACB00785F3D /* bolnici */,
+				94500837299020CC00785F3D /* banks */,
+				9450082D299016DC00785F3D /* For Pets */,
+				94500822298FFDC300785F3D /* UhodZaSoboi */,
+				9450081F298FFA9100785F3D /* Transport */,
+				94500816298FEF8500785F3D /* Dostoprime4atelnosti */,
+				94500815298FEF6200785F3D /* Cafe, Bars, Rest */,
+				94500814298FEF4600785F3D /* Arenda */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		94D7C85529828D1500A510CC /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				947930262994DEF6003490F0 /* Razvlechenia */,
+				945008B62994D78C00785F3D /* Cars */,
+				945008AB2994CA0300785F3D /* Schkoli */,
+				945008A22994222800785F3D /* Bolnici */,
+				945008992994105C00785F3D /* Banks */,
+				9450088E2993E2ED00785F3D /* ForPets */,
+				945008812993D7D900785F3D /* UhodZaSoboi */,
+				9450087E2993D61800785F3D /* Transport */,
+				9450086F2992B52300785F3D /* Dostoprimechatelnosti */,
+				9420AA84298968800014809B /* Favorites */,
+				9420AA85298968890014809B /* Rent */,
+				9420AA86298968970014809B /* Bar,Rest,Veg */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		94ECAC5429880F9700A9D55B /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				94ECAC57298811AC00A9D55B /* Model */,
+				94ECAC5529880FB100A9D55B /* CollectionViewController.swift */,
+				94ECAC5229880F2500A9D55B /* MenuCollectionViewCell.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		94ECAC57298811AC00A9D55B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				94ECAC58298811B600A9D55B /* Menu.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +720,7 @@
 			files = (
 				94BDB7742976BC99002577ED /* LaunchScreen.storyboard in Resources */,
 				94BDB7712976BC99002577ED /* Assets.xcassets in Resources */,
+				9471754F297E7BAC00B9B4A1 /* TaskTypeCell.xib in Resources */,
 				94BDB76F2976BC98002577ED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +732,115 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				943F226929B4B10700BD8069 /* TaskCell.swift in Sources */,
+				945008B12994CA3F00785F3D /* TableViewControllerSadRu.swift in Sources */,
+				9450089D2994109C00785F3D /* TableViewControllerFaqBanks.swift in Sources */,
+				945008A12994118500785F3D /* ViewControllerPUBanks.swift in Sources */,
+				9420AA772989551E0014809B /* RentTelegram.swift in Sources */,
+				945008802993D62D00785F3D /* TableViewControllerTransport.swift in Sources */,
+				945008772992BD1000785F3D /* TableViewControllerParkiIOzera.swift in Sources */,
+				9450085A2991586700785F3D /* buyCars.swift in Sources */,
+				9450084C2990F66500785F3D /* sadRu.swift in Sources */,
+				94ECAC5629880FB100A9D55B /* CollectionViewController.swift in Sources */,
+				9450086A299162B500785F3D /* vnz.swift in Sources */,
+				94BDB7A0297A8221002577ED /* DesignSettings.swift in Sources */,
+				943BC0C1298122BD00058B3C /* TableViewControllerFavorites.swift in Sources */,
+				941C1CE529AF4D3D00C39BB9 /* ViewControllerTGRent.swift in Sources */,
+				945008A82994226100785F3D /* TableViewControllerStrahovki.swift in Sources */,
+				94500831299019A600785F3D /* zoomagazini.swift in Sources */,
+				947BFF332986B3660035CCED /* InstantPanGestureRecognizer.swift in Sources */,
+				9450081C298FF31900785F3D /* sobori.swift in Sources */,
+				9450083629901FB700785F3D /* operatori.swift in Sources */,
+				945008852993D7FF00785F3D /* TableViewControllerBarbers.swift in Sources */,
+				947930282994DF0F003490F0 /* TableViewControllerAfisha.swift in Sources */,
+				947930302994DFB1003490F0 /* TableViewControllerMalls.swift in Sources */,
+				945008B32994CA4A00785F3D /* TableViewControllerSadEng.swift in Sources */,
+				9450082F299016F600785F3D /* veterinar.swift in Sources */,
+				9471754E297E7BAC00B9B4A1 /* TaskTypeCell.swift in Sources */,
+				945008AF2994CA3400785F3D /* TableViewControllerSchoolEng.swift in Sources */,
+				947BFF2B2986B27A0035CCED /* PresentationController.swift in Sources */,
+				9450081E298FF43100785F3D /* drugoe.swift in Sources */,
+				9450086E2991636E00785F3D /* ip.swift in Sources */,
+				945008942993E33700785F3D /* TableViewControllerZoomagazin.swift in Sources */,
+				940B522229B1EEEB001DC037 /* ForAllViewController.swift in Sources */,
+				9450087D2992BFC200785F3D /* ViewControllerPUDostopr.swift in Sources */,
+				945008792992BD1C00785F3D /* TableViewControllerSobori.swift in Sources */,
+				943BC0BF298012C500058B3C /* TableViewControllerBars.swift in Sources */,
+				94ECAC5329880F2500A9D55B /* MenuCollectionViewCell.swift in Sources */,
+				947930322994E156003490F0 /* ViewControllerPURazvlechenia.swift in Sources */,
+				945008412990EADD00785F3D /* polikliniki.swift in Sources */,
+				9450082A299013CD00785F3D /* spa.swift in Sources */,
+				945008B82994D7A600785F3D /* TableViewControllerRentCars.swift in Sources */,
+				945008BC2994D7CD00785F3D /* TableViewControllerFaqCars.swift in Sources */,
+				945008582991518900785F3D /* faqCars.swift in Sources */,
+				945008832993D7F200785F3D /* TableViewControllerSaloniKras.swift in Sources */,
+				9420AA7F298962CB0014809B /* TableViewControllerTGRent.swift in Sources */,
+				945008752992BCFF00785F3D /* TableViewControllerMesta.swift in Sources */,
+				9420AA812989648B0014809B /* ViewControllerPUBars.swift in Sources */,
+				945008B52994CAEE00785F3D /* ViewControllerPUSchool.swift in Sources */,
+				947BFF2D2986B29E0035CCED /* DimmPresentationController.swift in Sources */,
+				945008A62994225200785F3D /* TableViewControllerDental.swift in Sources */,
+				9450082C299014F500785F3D /* sportzal.swift in Sources */,
+				945008482990F23000785F3D /* schoolRU.swift in Sources */,
+				9479302C2994DF89003490F0 /* TableViewControllerKinotatr.swift in Sources */,
+				9450081A298FF11100785F3D /* parkiIOzera.swift in Sources */,
+				94BDB7A2297D287B002577ED /* TableViewControllerHome.swift in Sources */,
+				9420AA7D29895BE20014809B /* PopUpRentViewController.swift in Sources */,
+				9420AA7B298956150014809B /* VeganCafe.swift in Sources */,
 				94BDB76C2976BC98002577ED /* ViewController.swift in Sources */,
+				945008BE2994D7D800785F3D /* TableViewControllerBuyCars.swift in Sources */,
+				9450085329914EF400785F3D /* carService.swift in Sources */,
+				945008872993D80A00785F3D /* TableViewControllerNogti.swift in Sources */,
+				9450083E2990E8F900785F3D /* moneyTransfer.swift in Sources */,
+				9420AA8A2989690B0014809B /* TableViewControllerVegan.swift in Sources */,
+				9450085F29915C7800785F3D /* clubs.swift in Sources */,
+				945008C02994DA5700785F3D /* ViewControllerPUCars.swift in Sources */,
+				9450087B2992BD2700785F3D /* TableViewControllerDrugoe.swift in Sources */,
+				947BFF292986670D0035CCED /* ChildViewController.swift in Sources */,
+				9450084A2990F35000785F3D /* schoolEng.swift in Sources */,
+				943BC0BD298008E500058B3C /* Content.swift in Sources */,
+				9450084E2990F75900785F3D /* sadEng.swift in Sources */,
+				947BFF2729865D570035CCED /* PanelTransition.swift in Sources */,
+				945008962993E34300785F3D /* TableViewControllerGrooming.swift in Sources */,
+				945008AD2994CA2900785F3D /* TableViewControllerSchoolRu.swift in Sources */,
+				945008892993D81300785F3D /* TableViewControllerSpa.swift in Sources */,
+				9450085D29915AE400785F3D /* afisha.swift in Sources */,
+				945008432990EBD700785F3D /* dental.swift in Sources */,
+				94500821298FFAC200785F3D /* transport.swift in Sources */,
+				9420AA88298968FD0014809B /* TableViewControllerCafe.swift in Sources */,
+				9450089F299410A800785F3D /* TableViewControllerMoneyTransfer.swift in Sources */,
+				94D7C85429828CB900A510CC /* Bars.swift in Sources */,
+				9479302A2994DF19003490F0 /* TableViewControllerClubs.swift in Sources */,
+				9450086529915F9100785F3D /* malls.swift in Sources */,
+				9450086329915EAC00785F3D /* teatre.swift in Sources */,
+				9450083B2990E7AA00785F3D /* faqBanks.swift in Sources */,
+				94500818298FEFB000785F3D /* mesta.swift in Sources */,
+				945008392990212100785F3D /* banks.swift in Sources */,
+				94500824298FFDDE00785F3D /* saloniKrasoti.swift in Sources */,
 				94BDB7682976BC98002577ED /* AppDelegate.swift in Sources */,
+				94ECAC59298811B600A9D55B /* Menu.swift in Sources */,
 				94BDB76A2976BC98002577ED /* SceneDelegate.swift in Sources */,
+				9450083329901B7F00785F3D /* grooming.swift in Sources */,
+				947BFF312986B3090035CCED /* TransitionDriver.swift in Sources */,
+				9450086129915DFC00785F3D /* kinoteatr.swift in Sources */,
+				94D7C8522982823100A510CC /* Rent.swift in Sources */,
+				9450088D2993DB2200785F3D /* ViewControllerPUUhodZa.swift in Sources */,
+				947BFF2F2986B2D30035CCED /* DismissAnimation.swift in Sources */,
+				9450086C2991631700785F3D /* grajdanstvo.swift in Sources */,
+				9450082629900F3600785F3D /* barber.swift in Sources */,
+				945008BA2994D7B900785F3D /* TableViewControllerCarService.swift in Sources */,
+				9479302E2994DF9B003490F0 /* TableViewControllerTeatre.swift in Sources */,
+				9420AA79298955920014809B /* CafeRest.swift in Sources */,
+				945008452990F07800785F3D /* strahovki.swift in Sources */,
+				9450085129914CEC00785F3D /* rentCars.swift in Sources */,
+				9450089B2994108C00785F3D /* TableViewControllerBanks.swift in Sources */,
+				945008982993E42C00785F3D /* ViewControllerPUForPets.swift in Sources */,
+				9450088B2993D81D00785F3D /* TableViewControllerSportzal.swift in Sources */,
+				94BDB79E297A8183002577ED /* ViewControllerTwo.swift in Sources */,
+				945008922993E32800785F3D /* TableViewControllerVeterinar.swift in Sources */,
+				945008AA299423EB00785F3D /* ViewControllerBolnici.swift in Sources */,
+				945008A42994224600785F3D /* TableViewControllerPolikliniki.swift in Sources */,
+				945008282990126100785F3D /* nogti.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,17 +990,19 @@
 				DEVELOPMENT_TEAM = U3CGT88S32;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GeoriaHelper/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Expat's Helper";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.myorganization.GeoriaHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myorganization.ExpatHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -318,17 +1020,19 @@
 				DEVELOPMENT_TEAM = U3CGT88S32;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GeoriaHelper/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Expat's Helper";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.myorganization.GeoriaHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myorganization.ExpatHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

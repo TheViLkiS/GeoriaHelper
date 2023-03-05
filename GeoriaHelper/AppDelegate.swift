@@ -14,6 +14,51 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let userDefaults = UserDefaults.standard
+        if userDefaults.object(forKey: "favoriteArrayString") == nil {
+            userDefaults.set(["": true], forKey: "favoriteArrayString")
+        }
+
+        barsPrepare()
+        rentPrepare()
+        rentPrepareTelegram()
+        cafeRestPrepare()
+        veganCafePrepare()
+        mestaPrepare()
+        parkiIOzeraPrepare()
+        soboriPrepare()
+        drugoePrepare()
+        transportPrepare()
+        saloniKrasotiPrepare()
+        barberPrepare()
+        nogtiPrepare()
+        spaPrepare()
+        sportzalPrepare()
+        veterinarPrepare()
+        zoomagaziniPrepare()
+        groomingPrepare()
+        banksPrepare()
+        faqBanksPrepare()
+        moneyTransferPrepare()
+        poliklinikiPrepare()
+        dentalPrepare()
+        strahovkiPrepare()
+        schoolRUPrepare()
+        schoolEngPrepare()
+        sadRuPrepare()
+        sadEngPrepare()
+        rentCarsPrepare()
+        carServicePrepare()
+        faqCarsPrepare()
+        buyCarsPrepare()
+        mallsPrepare()
+        teatrePrepare()
+        kinoteatrPrepare()
+        clubsPrepare()
+        afishaPrepare()
+        
+        
         return true
     }
 
