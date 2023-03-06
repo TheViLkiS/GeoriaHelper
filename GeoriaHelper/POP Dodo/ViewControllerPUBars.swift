@@ -55,20 +55,35 @@ class ViewControllerPUBars: UIViewController {
     }
 
     @objc func addOneButtonObj() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerCafe")
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerCafe")
+//        self.present(vc, animated: true)
+        
+        let vc = ForAllViewController()
+        vc.nameVC = "TableViewControllerCafe"
+        vc.topTitleLabel = "Кафе, Рестораны"
         self.present(vc, animated: true)
         }
     
     @objc func addTwoButtonObj() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerBars")
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerBars")
+//        self.present(vc, animated: true)
+        
+        let vc = ForAllViewController()
+        vc.nameVC = "TableViewControllerBars"
+        vc.topTitleLabel = "Бары"
         self.present(vc, animated: true)
     }
     
     @objc func addThreeButtonObj() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerVegan")
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerVegan")
+//        self.present(vc, animated: true)
+        
+        let vc = ForAllViewController()
+        vc.nameVC = "TableViewControllerVegan"
+        vc.topTitleLabel = "Вегетарианские заведения"
         self.present(vc, animated: true)
     }
     

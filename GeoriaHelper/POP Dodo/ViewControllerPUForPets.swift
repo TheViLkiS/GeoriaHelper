@@ -55,20 +55,35 @@ class ViewControllerPUForPets: UIViewController {
         }
     
     @objc func addOneButtonObj() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerVeterinar")
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerVeterinar")
+//        self.present(vc, animated: true)
+        
+        let vc = ForAllViewController()
+        vc.nameVC = "TableViewControllerVeterinar"
+        vc.topTitleLabel = "Ветеринарные клиники"
         self.present(vc, animated: true)
         }
     
     @objc func addTwoButtonObj() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerZoomagazin")
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerZoomagazin")
+//        self.present(vc, animated: true)
+        
+        let vc = ForAllViewController()
+        vc.nameVC = "TableViewControllerZoomagazin"
+        vc.topTitleLabel = "Зоомагазины"
         self.present(vc, animated: true)
     }
     
     @objc func addThreeButtonObj() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerGrooming")
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerGrooming")
+//        self.present(vc, animated: true)
+        
+        let vc = ForAllViewController()
+        vc.nameVC = "TableViewControllerGrooming"
+        vc.topTitleLabel = "Груминг"
         self.present(vc, animated: true)
     }
     

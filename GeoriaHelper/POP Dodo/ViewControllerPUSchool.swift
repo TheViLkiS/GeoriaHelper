@@ -63,25 +63,45 @@ class ViewControllerPUSchool: UIViewController {
         }
     
     @objc func addOneButtonObj() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerSchoolRu")
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerSchoolRu")
+//        self.present(vc, animated: true)
+        
+        let vc = ForAllViewController()
+        vc.nameVC = "TableViewControllerSchoolRu"
+        vc.topTitleLabel = "Школы 🇷🇺"
         self.present(vc, animated: true)
         }
     
     @objc func addTwoButtonObj() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerSchoolEng")
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerSchoolEng")
+//        self.present(vc, animated: true)
+        
+        let vc = ForAllViewController()
+        vc.nameVC = "TableViewControllerSchoolEng"
+        vc.topTitleLabel = "Школы 🇬🇧"
         self.present(vc, animated: true)
     }
     
     @objc func addThreeButtonObj() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerSadRu")
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerSadRu")
+//        self.present(vc, animated: true)
+        
+        let vc = ForAllViewController()
+        vc.nameVC = "TableViewControllerSadRu"
+        vc.topTitleLabel = "Сады 🇷🇺"
         self.present(vc, animated: true)
     }
     @objc func addFourButtonObj() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerSadEng")
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerSadEng")
+//        self.present(vc, animated: true)
+        
+        let vc = ForAllViewController()
+        vc.nameVC = "TableViewControllerSadEng"
+        vc.topTitleLabel = "Сады 🇬🇧"
         self.present(vc, animated: true)
     }
     

@@ -56,20 +56,35 @@ class ViewControllerPUBanks: UIViewController {
         }
     
     @objc func addOneButtonObj() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerBanks")
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerBanks")
+//        self.present(vc, animated: true)
+        
+        let vc = ForAllViewController()
+        vc.nameVC = "TableViewControllerBanks"
+        vc.topTitleLabel = "Банки"
         self.present(vc, animated: true)
         }
     
     @objc func addTwoButtonObj() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerFaqBanks")
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerFaqBanks")
+//        self.present(vc, animated: true)
+        
+        let vc = ForAllViewController()
+        vc.nameVC = "TableViewControllerFaqBanks"
+        vc.topTitleLabel = "Открытие счёта"
         self.present(vc, animated: true)
     }
     
     @objc func addThreeButtonObj() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerMoneyTransfer")
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerMoneyTransfer")
+//        self.present(vc, animated: true)
+        
+        let vc = ForAllViewController()
+        vc.nameVC = "TableViewControllerMoneyTransfer"
+        vc.topTitleLabel = "Денежные переводы"
         self.present(vc, animated: true)
     }
         
