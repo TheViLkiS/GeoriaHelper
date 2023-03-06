@@ -65,7 +65,3 @@ class ForAllViewController: UIViewController {
     
     
 }
-// test commit 1
-
-// test commit 2 new n
-//new new
