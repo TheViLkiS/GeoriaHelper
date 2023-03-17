@@ -11,12 +11,12 @@ class TableViewControllerCafe: UITableViewController {
     var countTable = 0
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        if countTable == 0 {
-            animateTableView(tableView)
-            countTable = 1
-        }
+//        if countTable == 0 {
+//            animateTableView(tableView)
+//            countTable = 1
+//        }
     }
-    
+
     @IBOutlet weak var topTitle: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()

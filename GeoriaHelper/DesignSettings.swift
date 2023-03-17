@@ -241,7 +241,7 @@ extension UIViewController {
         button.tintColor = backgroundColorButton
         button.addTarget(self, action: #selector(dismissSelfTrue), for: .touchUpInside)
         customView.addSubview(button)
-        tableView.tableFooterView =  customView
+        tableView.tableFooterView = customView
     }
     
     func addChevronButton() {

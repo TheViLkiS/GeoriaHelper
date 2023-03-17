@@ -19,6 +19,8 @@ class ForAllTableViewController: UITableViewController {
             animateTableView(tableView)
             countTable = 1
         }
+        
+        
     }
 
     override func viewDidLoad() {
@@ -31,10 +33,19 @@ class ForAllTableViewController: UITableViewController {
         tableView.register(cellTypeNib, forCellReuseIdentifier: "TaskTypeCell")
         
         addFooterButton(tableView)
-
+        tableView.reloadData()
     }
 
     // MARK: - Table view data source
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+
+        cell.alpha = 0
+                cell.transform = CGAffineTransform(translationX: cell.contentView.frame.width, y:cell.contentView.frame.height)
+                UIView.animate(withDuration: 0.5, delay: 0.5*Double(indexPath.row), animations: {
+                    cell.transform = CGAffineTransform(translationX: cell.contentView.frame.width, y: 0)
+                    cell.alpha = 1
+                })
+    }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
