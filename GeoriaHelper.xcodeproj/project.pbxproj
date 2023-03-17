@@ -91,6 +91,7 @@
 		945008BC2994D7CD00785F3D /* TableViewControllerFaqCars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945008BB2994D7CD00785F3D /* TableViewControllerFaqCars.swift */; };
 		945008BE2994D7D800785F3D /* TableViewControllerBuyCars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945008BD2994D7D800785F3D /* TableViewControllerBuyCars.swift */; };
 		945008C02994DA5700785F3D /* ViewControllerPUCars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945008BF2994DA5700785F3D /* ViewControllerPUCars.swift */; };
+		946C06B829C48AE8005AB6D3 /* ForAllTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946C06B729C48AE8005AB6D3 /* ForAllTableViewController.swift */; };
 		9471754E297E7BAC00B9B4A1 /* TaskTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471754C297E7BAC00B9B4A1 /* TaskTypeCell.swift */; };
 		9471754F297E7BAC00B9B4A1 /* TaskTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9471754D297E7BAC00B9B4A1 /* TaskTypeCell.xib */; };
 		947930282994DF0F003490F0 /* TableViewControllerAfisha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947930272994DF0F003490F0 /* TableViewControllerAfisha.swift */; };
@@ -207,6 +208,7 @@
 		945008BB2994D7CD00785F3D /* TableViewControllerFaqCars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerFaqCars.swift; sourceTree = "<group>"; };
 		945008BD2994D7D800785F3D /* TableViewControllerBuyCars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerBuyCars.swift; sourceTree = "<group>"; };
 		945008BF2994DA5700785F3D /* ViewControllerPUCars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPUCars.swift; sourceTree = "<group>"; };
+		946C06B729C48AE8005AB6D3 /* ForAllTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForAllTableViewController.swift; sourceTree = "<group>"; };
 		9471754C297E7BAC00B9B4A1 /* TaskTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTypeCell.swift; sourceTree = "<group>"; };
 		9471754D297E7BAC00B9B4A1 /* TaskTypeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTypeCell.xib; sourceTree = "<group>"; };
 		947930272994DF0F003490F0 /* TableViewControllerAfisha.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerAfisha.swift; sourceTree = "<group>"; };
@@ -599,6 +601,7 @@
 				94BDB7722976BC99002577ED /* LaunchScreen.storyboard */,
 				94BDB7752976BC99002577ED /* Info.plist */,
 				940B522129B1EEEB001DC037 /* ForAllViewController.swift */,
+				946C06B729C48AE8005AB6D3 /* ForAllTableViewController.swift */,
 			);
 			path = GeoriaHelper;
 			sourceTree = "<group>";
@@ -799,6 +802,7 @@
 				947BFF292986670D0035CCED /* ChildViewController.swift in Sources */,
 				9450084A2990F35000785F3D /* schoolEng.swift in Sources */,
 				943BC0BD298008E500058B3C /* Content.swift in Sources */,
+				946C06B829C48AE8005AB6D3 /* ForAllTableViewController.swift in Sources */,
 				9450084E2990F75900785F3D /* sadEng.swift in Sources */,
 				947BFF2729865D570035CCED /* PanelTransition.swift in Sources */,
 				945008962993E34300785F3D /* TableViewControllerGrooming.swift in Sources */,

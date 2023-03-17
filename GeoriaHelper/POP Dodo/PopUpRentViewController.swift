@@ -53,6 +53,9 @@ class PopUpRentViewController: UIViewController {
         vc.nameVC = "sitesStoryboard"
         vc.topTitleLabel = "Сайты по недвижимости"
         vc.centerPlus = 15
+        vc.data = rent
+        
+        
 
         self.present(vc, animated: true)
         
@@ -68,6 +71,7 @@ class PopUpRentViewController: UIViewController {
         let vc = ForAllViewController()
         vc.nameVC = "tgRent"
         vc.topTitleLabel = "Телеграм-чаты"
+        vc.data = rentTelegram
         self.present(vc, animated: true)
     }
 }

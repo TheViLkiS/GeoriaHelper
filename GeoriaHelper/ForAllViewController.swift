@@ -7,21 +7,17 @@
 import UIKit
 
 class ForAllViewController: UIViewController {
-    var viewControllerHome: UITableViewController!
+    var viewControllerHome: ForAllTableViewController!
     var nameVC = ""
     var topTitleLabel = ""
     var centerPlus = 0
     var backButton = UIButton(type: .system)
     var topTitle: UILabel!
+    var data = [Place]()
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
         backButton = UIButton(frame: CGRect(x: 0, y: 15, width: 100, height: 23))
         backButton.setTitle("Закрыть", for: .normal)
         backButton.setTitleColor(.systemBlue, for: .normal)
@@ -42,13 +38,17 @@ class ForAllViewController: UIViewController {
         view.addSubview(topTitle)
 
         configureVC(nameVC: nameVC)
+
     }
     
+
+    
     func configureVC(nameVC: String) {
-        let storyboard = UIStoryboard(name: "Main", bundle: .main)
-        let viewController = storyboard.instantiateViewController(identifier: nameVC)
-            as? UITableViewController
-        viewControllerHome = viewController
+//        let storyboard = UIStoryboard(name: "Main", bundle: .main)
+//        let viewController = storyboard.instantiateViewController(identifier: nameVC)
+//            as? UITableViewController
+        viewControllerHome = ForAllTableViewController()
+        viewControllerHome.data2 = data
 
         addChild(viewControllerHome)
         view.addSubview(viewControllerHome.view)
