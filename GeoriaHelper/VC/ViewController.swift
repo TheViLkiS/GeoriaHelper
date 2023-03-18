@@ -132,6 +132,7 @@ class ViewController: UIViewController {
     @IBAction func buttonTouchDownTransport(_ sender: UIButton) {
         //Connected with Touch Down Action
         sender.animateButtonDown()
+        
     }
 
     @IBAction func buttonTouchUpOutsideTransport(_ sender: UIButton) {
@@ -145,9 +146,11 @@ class ViewController: UIViewController {
         sender.animateButtonUp()
         //code to execute when button pressed
         
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerTransport")
+        let vc = ForAllViewController()
+        vc.nameVC = "TableViewControllerTransport"
+        vc.topTitleLabel = "Транспорт"
         self.present(vc, animated: true)
+        
 
     }
     // Arrow button
@@ -191,7 +194,10 @@ class ViewController: UIViewController {
         //Connected with Touch Up Inside Action
         sender.animateButtonUp()
         //code to execute when button pressed
-
+        let vc = ForAllViewController()
+        vc.nameVC = "TableViewControllerFavorites"
+        vc.topTitleLabel = "Избранное"
+        self.present(vc, animated: true)
     }
     
 }

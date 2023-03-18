@@ -18,9 +18,6 @@ class TableViewControllerSadRu: UITableViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        buttonSettings(a: topTitle)
-        font30MarkerCenter(label: topTitle, text: "Русскоязычные сады")
-        labelShadow(topTitle: topTitle)
 
         // 1. получение значение типа UINib, соответствующее xib-файлу кастом- ной ячейки
         let cellTypeNib = UINib(nibName: "TaskTypeCell", bundle: nil)
@@ -30,7 +27,7 @@ class TableViewControllerSadRu: UITableViewController {
         addFooterButton(tableView)
     }
 
-    @IBOutlet weak var topTitle: UILabel!
+
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {

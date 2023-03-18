@@ -24,8 +24,6 @@ class TableViewControllerFavorites: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       buttonSettings(a: topTitle)
-        labelShadow(topTitle: topTitle)
 
         
         arrayPlace = addPlaceToFavorite()
@@ -65,7 +63,7 @@ class TableViewControllerFavorites: UITableViewController {
         return cell
     }
 
-    @IBOutlet weak var topTitle: UILabel!
+
     
 
 }

@@ -17,11 +17,6 @@ class ForAllViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
         backButton = UIButton(frame: CGRect(x: 0, y: 15, width: 100, height: 23))
         backButton.setTitle("Закрыть", for: .normal)
         backButton.setTitleColor(.systemBlue, for: .normal)
@@ -42,6 +37,11 @@ class ForAllViewController: UIViewController {
         view.addSubview(topTitle)
 
         configureVC(nameVC: nameVC)
+
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+
     }
     
     func configureVC(nameVC: String) {

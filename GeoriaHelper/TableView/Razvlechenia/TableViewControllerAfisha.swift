@@ -19,9 +19,9 @@ class TableViewControllerAfisha: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        buttonSettings(a: topTitle)
-        font30MarkerCenter(label: topTitle, text: "Афиша")
-        labelShadow(topTitle: topTitle)
+       
+       
+  
 
          // 1. получение значение типа UINib, соответствующее xib-файлу кастом- ной ячейки
          let cellTypeNib = UINib(nibName: "TaskTypeCell", bundle: nil)
@@ -33,7 +33,7 @@ class TableViewControllerAfisha: UITableViewController {
 
     // MARK: - Table view data source
 
-    @IBOutlet weak var topTitle: UILabel!
+    
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections

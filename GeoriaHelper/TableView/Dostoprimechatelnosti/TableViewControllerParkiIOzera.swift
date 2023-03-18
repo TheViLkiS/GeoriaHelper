@@ -18,8 +18,6 @@ class TableViewControllerParkiIOzera: UITableViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        buttonSettings(a: topTitle)
-        labelShadow(topTitle: topTitle)
 
         // 1. получение значение типа UINib, соответствующее xib-файлу кастом- ной ячейки
         let cellTypeNib = UINib(nibName: "TaskTypeCell", bundle: nil)
@@ -43,7 +41,7 @@ class TableViewControllerParkiIOzera: UITableViewController {
         
     }
 
-    @IBOutlet weak var topTitle: UILabel!
+
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         cellSettings(tableView, place: parkiIOzera, indexPath: indexPath)

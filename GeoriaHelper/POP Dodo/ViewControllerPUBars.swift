@@ -84,6 +84,7 @@ class ViewControllerPUBars: UIViewController {
         let vc = ForAllViewController()
         vc.nameVC = "TableViewControllerVegan"
         vc.topTitleLabel = "Вегетарианские заведения"
+        vc.centerPlus = 25
         self.present(vc, animated: true)
     }
     

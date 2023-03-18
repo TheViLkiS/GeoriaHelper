@@ -117,9 +117,6 @@
 		94BDB7A2297D287B002577ED /* TableViewControllerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BDB7A1297D287B002577ED /* TableViewControllerHome.swift */; };
 		94D7C8522982823100A510CC /* Rent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D7C8512982823100A510CC /* Rent.swift */; };
 		94D7C85429828CB900A510CC /* Bars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D7C85329828CB900A510CC /* Bars.swift */; };
-		94ECAC5329880F2500A9D55B /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ECAC5229880F2500A9D55B /* MenuCollectionViewCell.swift */; };
-		94ECAC5629880FB100A9D55B /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ECAC5529880FB100A9D55B /* CollectionViewController.swift */; };
-		94ECAC59298811B600A9D55B /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ECAC58298811B600A9D55B /* Menu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -235,9 +232,6 @@
 		94BDB7A1297D287B002577ED /* TableViewControllerHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerHome.swift; sourceTree = "<group>"; };
 		94D7C8512982823100A510CC /* Rent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rent.swift; sourceTree = "<group>"; };
 		94D7C85329828CB900A510CC /* Bars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bars.swift; sourceTree = "<group>"; };
-		94ECAC5229880F2500A9D55B /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
-		94ECAC5529880FB100A9D55B /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
-		94ECAC58298811B600A9D55B /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -583,7 +577,6 @@
 		94BDB7662976BC98002577ED /* GeoriaHelper */ = {
 			isa = PBXGroup;
 			children = (
-				94ECAC5429880F9700A9D55B /* CollectionView */,
 				9448B00E2987AC9900351DF4 /* Cell */,
 				94D7C8502982821300A510CC /* Data */,
 				947BFF2529865D440035CCED /* POP Dodo */,
@@ -640,24 +633,6 @@
 				9420AA86298968970014809B /* Bar,Rest,Veg */,
 			);
 			path = TableView;
-			sourceTree = "<group>";
-		};
-		94ECAC5429880F9700A9D55B /* CollectionView */ = {
-			isa = PBXGroup;
-			children = (
-				94ECAC57298811AC00A9D55B /* Model */,
-				94ECAC5529880FB100A9D55B /* CollectionViewController.swift */,
-				94ECAC5229880F2500A9D55B /* MenuCollectionViewCell.swift */,
-			);
-			path = CollectionView;
-			sourceTree = "<group>";
-		};
-		94ECAC57298811AC00A9D55B /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				94ECAC58298811B600A9D55B /* Menu.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -741,7 +716,6 @@
 				945008772992BD1000785F3D /* TableViewControllerParkiIOzera.swift in Sources */,
 				9450085A2991586700785F3D /* buyCars.swift in Sources */,
 				9450084C2990F66500785F3D /* sadRu.swift in Sources */,
-				94ECAC5629880FB100A9D55B /* CollectionViewController.swift in Sources */,
 				9450086A299162B500785F3D /* vnz.swift in Sources */,
 				94BDB7A0297A8221002577ED /* DesignSettings.swift in Sources */,
 				943BC0C1298122BD00058B3C /* TableViewControllerFavorites.swift in Sources */,
@@ -766,7 +740,6 @@
 				9450087D2992BFC200785F3D /* ViewControllerPUDostopr.swift in Sources */,
 				945008792992BD1C00785F3D /* TableViewControllerSobori.swift in Sources */,
 				943BC0BF298012C500058B3C /* TableViewControllerBars.swift in Sources */,
-				94ECAC5329880F2500A9D55B /* MenuCollectionViewCell.swift in Sources */,
 				947930322994E156003490F0 /* ViewControllerPURazvlechenia.swift in Sources */,
 				945008412990EADD00785F3D /* polikliniki.swift in Sources */,
 				9450082A299013CD00785F3D /* spa.swift in Sources */,
@@ -818,7 +791,6 @@
 				945008392990212100785F3D /* banks.swift in Sources */,
 				94500824298FFDDE00785F3D /* saloniKrasoti.swift in Sources */,
 				94BDB7682976BC98002577ED /* AppDelegate.swift in Sources */,
-				94ECAC59298811B600A9D55B /* Menu.swift in Sources */,
 				94BDB76A2976BC98002577ED /* SceneDelegate.swift in Sources */,
 				9450083329901B7F00785F3D /* grooming.swift in Sources */,
 				947BFF312986B3090035CCED /* TransitionDriver.swift in Sources */,

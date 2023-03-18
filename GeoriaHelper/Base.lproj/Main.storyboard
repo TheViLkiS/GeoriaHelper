@@ -12,21 +12,14 @@
         <!--Table View Controller Favorites-->
         <scene sceneID="RYf-Sx-TJK">
             <objects>
-                <tableViewController id="3vT-Iz-zyG" customClass="TableViewControllerFavorites" customModule="GeoriaHelper" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="TableViewControllerFavorites" id="3vT-Iz-zyG" customClass="TableViewControllerFavorites" customModule="GeoriaHelper" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="VSW-Ap-3eQ">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Избранное" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dbW-eo-6Qf">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskTypeCell" id="5zI-iA-aiH">
-                                <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5zI-iA-aiH" id="U7b-uu-Llt">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
@@ -40,9 +33,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="0ZA-02-XFr"/>
-                    <connections>
-                        <outlet property="topTitle" destination="dbW-eo-6Qf" id="gRL-vq-YJy"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qav-IM-J8k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -137,7 +127,6 @@
                                     <action selector="buttonTouchDownFavorite:" destination="BYZ-38-t0r" eventType="touchDown" id="9hS-kW-eXx"/>
                                     <action selector="buttonTouchUpInsideFavorite:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TQg-os-Ah6"/>
                                     <action selector="buttonTouchUpOutsideFavorite:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="bzE-Lj-BVq"/>
-                                    <segue destination="3vT-Iz-zyG" kind="show" id="JXz-hO-4af"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fo6-mP-HuF">
@@ -207,11 +196,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0he-5y-2Dk">
-                                <rect key="frame" x="40" y="243.66666666666666" width="313" height="52.333333333333343"/>
+                                <rect key="frame" x="40" y="237.66666666666666" width="313" height="49.333333333333343"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Развлечения" buttonSize="large">
-                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="buttonTouchDownRazvlechenia:" destination="l0F-46-7ZE" eventType="touchDown" id="l45-qj-KoA"/>
@@ -220,11 +209,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aB7-vd-rYd">
-                                <rect key="frame" x="40" y="316" width="313" height="52.333333333333314"/>
+                                <rect key="frame" x="40" y="307" width="313" height="50.333333333333314"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Финансы" buttonSize="large">
-                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="buttonTouchDownBanks:" destination="l0F-46-7ZE" eventType="touchDown" id="NM9-9m-Yze"/>
@@ -233,11 +222,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJh-cF-6D7">
-                                <rect key="frame" x="40" y="99" width="313" height="52.333333333333343"/>
+                                <rect key="frame" x="40" y="99" width="313" height="49.333333333333343"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Для питомцев" buttonSize="large">
-                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="buttonTouchDownForPets:" destination="l0F-46-7ZE" eventType="touchDown" id="NNT-of-7w2"/>
@@ -246,11 +235,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NEr-5o-zlO">
-                                <rect key="frame" x="40" y="171.33333333333334" width="313" height="52.333333333333343"/>
+                                <rect key="frame" x="40" y="168.33333333333334" width="313" height="49.333333333333343"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Медицинская помощь" buttonSize="large">
-                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="buttonTouchDownBolnici:" destination="l0F-46-7ZE" eventType="touchDown" id="0l1-k1-k2T"/>
@@ -267,7 +256,6 @@
                                     <action selector="buttonTouchDownFavorite:" destination="l0F-46-7ZE" eventType="touchDown" id="8OY-hp-Kwo"/>
                                     <action selector="buttonTouchUpInsideFavorite:" destination="l0F-46-7ZE" eventType="touchUpInside" id="2uy-AT-sIc"/>
                                     <action selector="buttonTouchUpOutsideFavorite:" destination="l0F-46-7ZE" eventType="touchUpOutside" id="fvg-Tw-vgF"/>
-                                    <segue destination="3vT-Iz-zyG" kind="show" id="XWK-vj-8Qf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ct2-0y-fKN">
@@ -284,11 +272,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U6l-na-WNW">
-                                <rect key="frame" x="40" y="388.33333333333331" width="313" height="52.333333333333314"/>
+                                <rect key="frame" x="40" y="377.33333333333331" width="313" height="50.333333333333314"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Здоровье, красота" buttonSize="large">
-                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="buttonTouchDownUhodZa:" destination="l0F-46-7ZE" eventType="touchDown" id="g0i-zR-i4t"/>
@@ -297,11 +285,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSL-83-qc5">
-                                <rect key="frame" x="40" y="460.66666666666669" width="313" height="52.333333333333314"/>
+                                <rect key="frame" x="40" y="447.66666666666669" width="313" height="50.333333333333314"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Школы, детские сады" buttonSize="large">
-                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="buttonTouchDownSchool:" destination="l0F-46-7ZE" eventType="touchDown" id="Exj-aN-Be3"/>
@@ -310,11 +298,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAm-x6-RS7">
-                                <rect key="frame" x="40" y="533" width="313" height="52.333333333333371"/>
+                                <rect key="frame" x="40" y="518" width="313" height="49.333333333333371"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Авто" buttonSize="large">
-                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="buttonTouchDownCars:" destination="l0F-46-7ZE" eventType="touchDown" id="oSP-dO-NiT"/>
@@ -379,16 +367,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eBj-jz-AfN">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskTypeCell" id="XaR-gT-VzR">
-                                <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XaR-gT-VzR" id="okT-wJ-zbu">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
@@ -401,9 +382,6 @@
                             <outlet property="delegate" destination="D3N-F1-bQY" id="YYG-tl-sCh"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="topTitle" destination="eBj-jz-AfN" id="zO0-P9-HgO"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aMC-e9-uwS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -417,16 +395,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ndo-c1-hIx">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskTypeCell" id="q3H-vp-XXm">
-                                <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="q3H-vp-XXm" id="8rc-1J-5Mq">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
@@ -439,9 +410,6 @@
                             <outlet property="delegate" destination="3Cc-wq-6kM" id="zLZ-n7-Dqb"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="topTitle" destination="Ndo-c1-hIx" id="orE-LA-Z7d"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ukh-M0-m6m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -455,16 +423,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="x9N-0x-M0f">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskTypeCell" id="Awf-Xh-oGz">
-                                <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Awf-Xh-oGz" id="k8P-C9-b8q">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
@@ -477,9 +438,6 @@
                             <outlet property="delegate" destination="Rrj-Ud-zg2" id="1D2-dN-YXf"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="topTitle" destination="x9N-0x-M0f" id="YSG-20-eqj"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F8C-dY-PuW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -488,37 +446,7 @@
         <!--Table View Controller School Ru-->
         <scene sceneID="jcT-0d-r3X">
             <objects>
-                <tableViewController storyboardIdentifier="TableViewControllerSchoolRu" id="oV1-tV-n4E" customClass="TableViewControllerSchoolRu" customModule="GeoriaHelper" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="JHi-T8-DrW">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OwQ-6V-AC7">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskTypeCell" id="6DE-dn-LhU">
-                                <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6DE-dn-LhU" id="CdF-EJ-E6q">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="oV1-tV-n4E" id="Rbe-yB-yeb"/>
-                            <outlet property="delegate" destination="oV1-tV-n4E" id="aaa-FU-1TL"/>
-                        </connections>
-                    </tableView>
-                    <connections>
-                        <outlet property="topTitle" destination="OwQ-6V-AC7" id="Emd-hb-kK5"/>
-                    </connections>
-                </tableViewController>
+                <tableViewController storyboardIdentifier="TableViewControllerSchoolRu" id="oV1-tV-n4E" customClass="TableViewControllerSchoolRu" customModule="GeoriaHelper" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UOX-Bu-qvE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5192" y="3189"/>
@@ -531,16 +459,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Y5b-mY-IFp">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskTypeCell" id="eDl-Fg-ciP">
-                                <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eDl-Fg-ciP" id="i4u-kq-k3I">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
@@ -553,9 +474,6 @@
                             <outlet property="delegate" destination="1se-Ot-kji" id="eSM-hD-bwo"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="topTitle" destination="Y5b-mY-IFp" id="M31-ta-man"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OYS-iE-FJq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -665,16 +583,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Бары" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4fA-R0-oYH">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskTypeCell" id="ZDx-w9-9Ln">
-                                <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZDx-w9-9Ln" id="wAV-A2-Pci">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
@@ -688,9 +599,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="XZQ-bj-Cvp"/>
-                    <connections>
-                        <outlet property="topTitle" destination="4fA-R0-oYH" id="vp6-FC-Xds"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1TV-C7-jO8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -704,16 +612,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Кафе, рестораны" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Rtb-Dr-Z8N">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskTypeCell" id="FXe-gC-39g">
-                                <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FXe-gC-39g" id="Tvk-ht-sRQ">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
@@ -726,9 +627,6 @@
                             <outlet property="delegate" destination="mZy-XZ-l8R" id="BJY-io-fnv"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="topTitle" destination="Rtb-Dr-Z8N" id="u4V-tp-CeQ"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nCc-lT-pbO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -742,16 +640,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Интересные места" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1dQ-0F-hkK">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskTypeCell" id="Php-IN-mjw">
-                                <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Php-IN-mjw" id="pml-AO-mpN">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
@@ -764,9 +655,6 @@
                             <outlet property="delegate" destination="nZn-GF-xQY" id="fAj-li-5JO"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="topTitle" destination="1dQ-0F-hkK" id="mcD-rA-EOt"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ULc-PK-XdD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -780,16 +668,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Транспорт" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qmy-cb-Kaa">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskTypeCell" id="GNv-2Z-o1L">
-                                <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GNv-2Z-o1L" id="KhC-7U-m78">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
@@ -802,9 +683,6 @@
                             <outlet property="delegate" destination="JSb-Hc-NCy" id="quj-L4-4R4"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="topTitle" destination="qmy-cb-Kaa" id="ltd-Fq-1mM"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gYQ-us-utb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -818,16 +696,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pep-fX-frk">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskTypeCell" id="i6W-07-aLu">
-                                <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="i6W-07-aLu" id="4lX-gO-gJm">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
@@ -840,9 +711,6 @@
                             <outlet property="delegate" destination="IdL-0F-1ig" id="nbK-sx-xOc"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="topTitle" destination="pep-fX-frk" id="kZb-PF-14Q"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aXZ-Ko-1sc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -856,16 +724,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вегетарианские заведения" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qVe-sC-X4F">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskTypeCell" id="FuF-ej-Pkx">
-                                <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FuF-ej-Pkx" id="T9P-bv-MXS">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
@@ -879,9 +740,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="qx1-pP-Nqy"/>
-                    <connections>
-                        <outlet property="topTitle" destination="qVe-sC-X4F" id="dH2-XC-hgT"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vb5-q2-Yww" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -895,16 +753,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Парки и озёра" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iGc-vS-x0c">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskTypeCell" id="t7b-Nn-gWX">
-                                <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="t7b-Nn-gWX" id="6xy-6W-t9Z">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
@@ -917,9 +768,6 @@
                             <outlet property="delegate" destination="nPp-Xs-xK9" id="n9X-S7-eiy"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="topTitle" destination="iGc-vS-x0c" id="fDe-s6-F7g"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eXs-jS-7t2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -933,16 +781,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Соборы и памятники" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fMR-Rf-ExF">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskTypeCell" id="YgU-9b-0Q4">
-                                <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YgU-9b-0Q4" id="MDq-w8-vfb">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
@@ -955,9 +796,6 @@
                             <outlet property="delegate" destination="uGU-rk-cao" id="ZP2-QL-XZK"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="topTitle" destination="fMR-Rf-ExF" id="4zA-9k-vXu"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K7w-PV-Ozt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -971,16 +809,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Другое" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XXo-pD-luC">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskTypeCell" id="VqK-2J-jtH">
-                                <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VqK-2J-jtH" id="lLz-Ax-S4R">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
@@ -993,9 +824,6 @@
                             <outlet property="delegate" destination="qTs-d0-6Dh" id="UKE-sG-fZM"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="topTitle" destination="XXo-pD-luC" id="uUL-cW-8vb"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5jZ-Cy-pQl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1009,16 +837,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4aE-G0-Gvl">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskTypeCell" id="qfo-t8-XGF">
-                                <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qfo-t8-XGF" id="2j7-qH-DwB">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
@@ -1031,9 +852,6 @@
                             <outlet property="delegate" destination="912-Lc-DLo" id="jEl-cG-qAv"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="topTitle" destination="4aE-G0-Gvl" id="nmS-ki-lb0"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wXI-hL-fny" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1047,16 +865,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IVl-hl-6g8">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskTypeCell" id="Hnq-oc-pRO">
-                                <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Hnq-oc-pRO" id="LdS-R8-HED">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
@@ -1069,9 +880,6 @@
                             <outlet property="delegate" destination="Pip-zt-gNT" id="tLz-la-KY6"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="topTitle" destination="IVl-hl-6g8" id="ihQ-72-zmB"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ngc-yG-7VJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1085,16 +893,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="acp-El-qXB">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskTypeCell" id="98V-Zw-PGa">
-                                <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="98V-Zw-PGa" id="isW-uJ-KNH">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
@@ -1107,9 +908,6 @@
                             <outlet property="delegate" destination="FsI-Sy-bGv" id="HcC-jy-dZH"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="topTitle" destination="acp-El-qXB" id="Yug-Ie-DSP"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SxD-nR-wkg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1123,16 +921,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mV6-DS-Jfo">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskTypeCell" id="1om-hC-mGh">
-                                <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1om-hC-mGh" id="GYq-ja-Ob3">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
@@ -1145,9 +936,6 @@
                             <outlet property="delegate" destination="8L3-YV-49u" id="QBN-PE-u91"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="topTitle" destination="mV6-DS-Jfo" id="Ins-Dv-LpM"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vX2-gz-kuR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1161,16 +949,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xXN-ko-fiV">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskTypeCell" id="xhf-eg-IOT">
-                                <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xhf-eg-IOT" id="d11-Zr-ucN">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
@@ -1183,9 +964,6 @@
                             <outlet property="delegate" destination="fcn-te-Br4" id="biz-b7-35s"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="topTitle" destination="xXN-ko-fiV" id="llS-2Z-BHC"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TXb-mk-nLr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1199,16 +977,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="L8c-u5-Mqj">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskTypeCell" id="aul-XZ-wkA">
-                                <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aul-XZ-wkA" id="AwO-vc-lhj">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
@@ -1221,9 +992,6 @@
                             <outlet property="delegate" destination="Xeo-cN-qyu" id="FBO-vD-zNW"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="topTitle" destination="L8c-u5-Mqj" id="esi-8y-oYa"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nFZ-hn-XAg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1237,16 +1005,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9MH-b7-00R">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskTypeCell" id="OtJ-mG-AEK">
-                                <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OtJ-mG-AEK" id="MOl-Nu-VN4">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
@@ -1259,9 +1020,6 @@
                             <outlet property="delegate" destination="Tyr-Q7-aHU" id="esG-LX-2tr"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="topTitle" destination="9MH-b7-00R" id="aR4-XH-snt"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Zp-OM-bbR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1275,16 +1033,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0nA-lm-JUU">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskTypeCell" id="XZc-He-MW3">
-                                <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XZc-He-MW3" id="JJH-hl-h1w">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
@@ -1297,9 +1048,6 @@
                             <outlet property="delegate" destination="REB-67-hAe" id="bCZ-dU-Xxe"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="topTitle" destination="0nA-lm-JUU" id="cTj-lR-Xoh"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hz1-Em-AIn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1313,16 +1061,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wv3-Mb-IeD">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskTypeCell" id="20W-TO-gha">
-                                <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="20W-TO-gha" id="QNT-cX-RlX">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
@@ -1335,9 +1076,6 @@
                             <outlet property="delegate" destination="Tsk-ZM-R9x" id="3VS-eh-jON"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="topTitle" destination="wv3-Mb-IeD" id="hZW-QK-W8Q"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LF7-9C-RcP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1351,16 +1089,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="b76-Sk-zdr">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskTypeCell" id="Hbi-dm-t5u">
-                                <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Hbi-dm-t5u" id="b78-Gd-Hul">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
@@ -1373,9 +1104,6 @@
                             <outlet property="delegate" destination="ZPl-Ym-a3N" id="7IP-ao-CNs"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="topTitle" destination="b76-Sk-zdr" id="9nr-zb-z8d"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JN7-m4-ZLG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1389,16 +1117,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wlt-sa-v8W">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskTypeCell" id="QXl-Z4-Va5">
-                                <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QXl-Z4-Va5" id="y1U-Ps-0LW">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
@@ -1411,9 +1132,6 @@
                             <outlet property="delegate" destination="A6i-8G-uHY" id="bSh-RF-ASX"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="topTitle" destination="wlt-sa-v8W" id="lbE-o2-9GR"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rDW-it-74d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1427,16 +1145,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gnl-zT-Y9A">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskTypeCell" id="H7h-Qa-nLg">
-                                <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="H7h-Qa-nLg" id="RHS-Yi-Jas">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
@@ -1449,9 +1160,6 @@
                             <outlet property="delegate" destination="U3d-Xy-eJW" id="oXP-of-qld"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="topTitle" destination="gnl-zT-Y9A" id="Pzl-RO-YOO"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LJd-YM-e08" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1465,16 +1173,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="V4c-t2-Iyo">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskTypeCell" id="5EC-Qe-XCD">
-                                <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5EC-Qe-XCD" id="q94-uF-ceg">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
@@ -1487,9 +1188,6 @@
                             <outlet property="delegate" destination="OEO-Jq-AYH" id="awP-GR-UtJ"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="topTitle" destination="V4c-t2-Iyo" id="yoA-ks-frD"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gxI-lh-7F5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1503,16 +1201,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hqi-YK-Dja">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskTypeCell" id="bDz-uk-ZSz">
-                                <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bDz-uk-ZSz" id="nba-md-Ihn">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
@@ -1525,9 +1216,6 @@
                             <outlet property="delegate" destination="Dg4-9N-IxW" id="xN2-9k-l26"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="topTitle" destination="hqi-YK-Dja" id="N1F-U2-tdB"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MTN-QS-sea" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1541,16 +1229,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Dcm-7u-4ve">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskTypeCell" id="ULc-vK-rib">
-                                <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ULc-vK-rib" id="hB0-wQ-2Mn">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
@@ -1563,9 +1244,6 @@
                             <outlet property="delegate" destination="VxV-AJ-y5I" id="xH4-io-CEs"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="topTitle" destination="Dcm-7u-4ve" id="7Ly-4D-kSB"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1D6-8j-PRF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1579,16 +1257,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fnJ-QV-7tm">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskTypeCell" id="zf2-eO-aNT">
-                                <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zf2-eO-aNT" id="Mcn-cl-3C1">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
@@ -1601,9 +1272,6 @@
                             <outlet property="delegate" destination="if9-gc-eGJ" id="3bV-ie-w3P"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="topTitle" destination="fnJ-QV-7tm" id="pG2-jV-EKg"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Js1-9L-BDQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1617,16 +1285,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RAE-Cn-FDB">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskTypeCell" id="gaH-th-1FT">
-                                <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gaH-th-1FT" id="cal-ay-CUb">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
@@ -1639,9 +1300,6 @@
                             <outlet property="delegate" destination="eIe-O1-0n4" id="zg3-va-u8x"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="topTitle" destination="RAE-Cn-FDB" id="HC5-Ss-7QU"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="woj-xc-gN5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1655,16 +1313,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="k7r-ZX-Ppc">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskTypeCell" id="EWc-I3-6Yp">
-                                <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EWc-I3-6Yp" id="yVU-X5-lob">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
@@ -1677,9 +1328,6 @@
                             <outlet property="delegate" destination="sQb-aQ-cai" id="LiV-r2-YTj"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="topTitle" destination="k7r-ZX-Ppc" id="y09-2P-rfy"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LcN-vT-fEG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1693,16 +1341,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2Er-Nb-1ea">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskTypeCell" id="W7S-bH-mOr">
-                                <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="W7S-bH-mOr" id="Kut-Zh-mAQ">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
@@ -1715,9 +1356,6 @@
                             <outlet property="delegate" destination="bnC-3R-SEN" id="C8C-yP-oaa"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="topTitle" destination="2Er-Nb-1ea" id="kHS-7B-9yn"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gIB-Xu-ze3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1731,16 +1369,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="W4d-hy-U4T">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskTypeCell" id="wYb-iG-2M5">
-                                <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wYb-iG-2M5" id="sEE-cf-gz5">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
@@ -1753,9 +1384,6 @@
                             <outlet property="delegate" destination="9CX-7m-tgA" id="ANb-68-GQC"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="topTitle" destination="W4d-hy-U4T" id="ywM-64-5Yc"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EaT-wV-d4T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1769,16 +1397,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XKy-Op-URG">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskTypeCell" id="eVE-Gd-lSk">
-                                <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eVE-Gd-lSk" id="sGC-tL-tmV">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
@@ -1791,18 +1412,12 @@
                             <outlet property="delegate" destination="rdx-TL-NJ2" id="ffw-2L-Dr4"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="topTitle" destination="XKy-Op-URG" id="xFh-KJ-Zmh"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Le-70-wLL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6036" y="4646"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="JXz-hO-4af"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="chevron.compact.down" catalog="system" width="128" height="42"/>
         <systemColor name="labelColor">

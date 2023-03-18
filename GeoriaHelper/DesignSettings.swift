@@ -276,30 +276,32 @@ extension UIViewController {
 extension UIViewController {
     
     func buttonSettingsBack(button: UIButton, title: String, centerConst: CGFloat, widthConst: CGFloat, heightConst: CGFloat) {
+        let userDisplay = UIScreen.main.nativeBounds.height
         
-        
-        button.setTitle(title, for: .normal)
-        button.tintColor = .systemGray
-//        buttonSettings(a: button)
-        button.titleLabel?.font = UIFont(name: "Marker Felt Wide", size: 17.0)
-        button.layer.borderColor = UIColor.systemGray.cgColor
-        button.layer.borderWidth = 2
-        button.layer.cornerRadius = 25
-        
-        button.addTarget(self, action: #selector(dismissSelfTrue), for: .touchUpInside)
-        button.addTarget(self, action: #selector(buttonTouchDown), for: .touchDown)
-        button.addTarget(self, action: #selector(buttonTouchUpInside), for: .touchUpInside)
-        button.addTarget(self, action: #selector(buttonTouchUpOutside), for: .touchUpOutside)
-        button.addTarget(self, action: #selector(buttonTouchUpOutside), for: .touchCancel)
-        
-        view.addSubview(button)
-        
+        if (userDisplay != 1136) && (userDisplay != 1334) {
+            button.setTitle(title, for: .normal)
+            button.tintColor = .systemGray
+            //        buttonSettings(a: button)
+            button.titleLabel?.font = UIFont(name: "Marker Felt Wide", size: 17.0)
+            button.layer.borderColor = UIColor.systemGray.cgColor
+            button.layer.borderWidth = 2
+            button.layer.cornerRadius = 25
+            
+            button.addTarget(self, action: #selector(dismissSelfTrue), for: .touchUpInside)
+            button.addTarget(self, action: #selector(buttonTouchDown), for: .touchDown)
+            button.addTarget(self, action: #selector(buttonTouchUpInside), for: .touchUpInside)
+            button.addTarget(self, action: #selector(buttonTouchUpOutside), for: .touchUpOutside)
+            button.addTarget(self, action: #selector(buttonTouchUpOutside), for: .touchCancel)
+            
+            view.addSubview(button)
+            
             button.translatesAutoresizingMaskIntoConstraints = false
             NSLayoutConstraint.activate([
-            button.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: centerConst),
-            button.widthAnchor.constraint(equalToConstant: widthConst),
-            button.heightAnchor.constraint(equalToConstant: heightConst),
-            button.topAnchor.constraint(equalTo: view.topAnchor, constant: view.center.y - 100)
-        ])
+                button.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: centerConst),
+                button.widthAnchor.constraint(equalToConstant: widthConst),
+                button.heightAnchor.constraint(equalToConstant: heightConst),
+                button.topAnchor.constraint(equalTo: view.topAnchor, constant: view.center.y - 100)
+            ])
+        }
     }
 }

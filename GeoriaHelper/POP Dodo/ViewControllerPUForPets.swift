@@ -62,6 +62,7 @@ class ViewControllerPUForPets: UIViewController {
         let vc = ForAllViewController()
         vc.nameVC = "TableViewControllerVeterinar"
         vc.topTitleLabel = "Ветеринарные клиники"
+        vc.centerPlus = 20
         self.present(vc, animated: true)
         }
     

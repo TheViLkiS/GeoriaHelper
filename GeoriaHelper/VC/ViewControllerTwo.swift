@@ -242,7 +242,10 @@ class ViewControllerTwo: UIViewController {
         //Connected with Touch Up Inside Action
         sender.animateButtonUp()
         //code to execute when button pressed
-
+        let vc = ForAllViewController()
+        vc.nameVC = "TableViewControllerFavorites"
+        vc.topTitleLabel = "Избранное"
+        self.present(vc, animated: true)
     }
     
 }

@@ -18,9 +18,6 @@ class TableViewControllerBanks: UITableViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        buttonSettings(a: topTitle)
-        font30MarkerCenter(label: topTitle, text: "Банки")
-        labelShadow(topTitle: topTitle)
 
         // 1. получение значение типа UINib, соответствующее xib-файлу кастом- ной ячейки
         let cellTypeNib = UINib(nibName: "TaskTypeCell", bundle: nil)
@@ -31,7 +28,7 @@ class TableViewControllerBanks: UITableViewController {
 
     }
 
-    @IBOutlet weak var topTitle: UILabel!
+
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {

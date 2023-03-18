@@ -34,6 +34,17 @@ class PopUpRentViewController: UIViewController {
                               widthConst: 300,
                               heightConst: 55,
                               topConst: 125)
+
+//        switch UIScreen.main.nativeBounds.height {
+//        case 1136, 1334:
+//        print("iPhone 5 or 5S or 5C")
+//
+//        case 1920, 2208, 2436, 2688, 1792:
+//        print("iPhone 6+/6S+/7+/8+")
+//            buttonSettingsBack(button: buttonBack, title: "Назад", centerConst: 0, widthConst: 150, heightConst: 55)
+//        default:
+//            buttonSettingsBack(button: buttonBack, title: "Назад", centerConst: 0, widthConst: 150, heightConst: 55)        }
+        
         buttonSettingsBack(button: buttonBack, title: "Назад", centerConst: 0, widthConst: 150, heightConst: 55)
 
 

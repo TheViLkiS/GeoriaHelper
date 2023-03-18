@@ -20,9 +20,7 @@ class TableViewControllerTGRent: UITableViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-//        buttonSettings(a: topTitle)
-//        labelShadow(topTitle: topTitle)
-        
+
         
         // 1. получение значение типа UINib, соответствующее xib-файлу кастом- ной ячейки
         let cellTypeNib = UINib(nibName: "TaskTypeCell", bundle: nil)
@@ -34,7 +32,7 @@ class TableViewControllerTGRent: UITableViewController {
 
 
     
-    @IBOutlet weak var topTitle: UILabel!
+
     
     
     override func numberOfSections(in tableView: UITableView) -> Int {
