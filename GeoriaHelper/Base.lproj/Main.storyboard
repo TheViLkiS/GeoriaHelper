@@ -446,10 +446,10 @@
         <!--Table View Controller School Ru-->
         <scene sceneID="jcT-0d-r3X">
             <objects>
-                <tableViewController storyboardIdentifier="TableViewControllerSchoolRu" id="oV1-tV-n4E" customClass="TableViewControllerSchoolRu" customModule="GeoriaHelper" customModuleProvider="target" sceneMemberID="viewController"/>
+                <tableViewController id="oV1-tV-n4E" customClass="TableViewControllerSchoolRu" customModule="GeoriaHelper" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UOX-Bu-qvE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5192" y="3189"/>
+            <point key="canvasLocation" x="4404" y="3201"/>
         </scene>
         <!--Table View Controller Rent Cars-->
         <scene sceneID="b1Y-V1-Qud">
@@ -1416,6 +1416,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Le-70-wLL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6036" y="4646"/>
+        </scene>
+        <!--Table View Controller School Ru-->
+        <scene sceneID="EGC-AZ-QGv">
+            <objects>
+                <tableViewController storyboardIdentifier="TableViewControllerSchoolRu" id="sNd-oo-o25" customClass="TableViewControllerSchoolRu" customModule="GeoriaHelper" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="1ez-mc-D4K">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskTypeCell" id="ogw-bw-Oht">
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ogw-bw-Oht" id="U2S-Yv-9w2">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="sNd-oo-o25" id="nmM-SL-vxu"/>
+                            <outlet property="delegate" destination="sNd-oo-o25" id="XV7-pI-7tb"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ENn-n9-LfM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5280" y="3189"/>
         </scene>
     </scenes>
     <resources>
