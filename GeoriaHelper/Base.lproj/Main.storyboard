@@ -443,14 +443,6 @@
             </objects>
             <point key="canvasLocation" x="5192" y="2465"/>
         </scene>
-        <!--Table View Controller School Ru-->
-        <scene sceneID="jcT-0d-r3X">
-            <objects>
-                <tableViewController id="oV1-tV-n4E" customClass="TableViewControllerSchoolRu" customModule="GeoriaHelper" customModuleProvider="target" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UOX-Bu-qvE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4404" y="3201"/>
-        </scene>
         <!--Table View Controller Rent Cars-->
         <scene sceneID="b1Y-V1-Qud">
             <objects>
