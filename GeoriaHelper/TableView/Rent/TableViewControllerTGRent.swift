@@ -20,8 +20,8 @@ class TableViewControllerTGRent: UITableViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
+
         // 1. получение значение типа UINib, соответствующее xib-файлу кастом- ной ячейки
         let cellTypeNib = UINib(nibName: "TaskTypeCell", bundle: nil)
         // 2. регистрация кастомной ячейки в табличном представлении tableView.register(cellTypeNib, forCellReuseIdentifier: "TaskTypeCell")
@@ -29,7 +29,9 @@ class TableViewControllerTGRent: UITableViewController {
         
         addFooterButton(tableView)
     }
-
+    @objc func doubleTap() {
+        dismiss(animated: true)
+    }
 
     
 

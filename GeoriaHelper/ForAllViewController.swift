@@ -40,9 +40,7 @@ class ForAllViewController: UIViewController {
 
     }
     
-    override func viewWillAppear(_ animated: Bool) {
 
-    }
     
     func configureVC(nameVC: String) {
         let storyboard = UIStoryboard(name: "Main", bundle: .main)
