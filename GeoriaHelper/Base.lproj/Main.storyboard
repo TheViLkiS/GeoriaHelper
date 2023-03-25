@@ -142,6 +142,16 @@
                                     <action selector="buttonTouchUpOutsideTransport:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="AX5-eD-TIs"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="epg-Sn-y4e">
+                                <rect key="frame" x="282" y="316" width="50" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="questionmark.circle" catalog="system"/>
+                                <connections>
+                                    <action selector="questionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dxQ-Vy-s7A"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -180,6 +190,7 @@
                         <outlet property="home" destination="IdA-SV-X5K" id="pCP-b2-Wb0"/>
                         <outlet property="label" destination="de6-sd-qVq" id="ESc-Sa-K5X"/>
                         <outlet property="place" destination="LPE-vM-5M6" id="JDA-zs-FaL"/>
+                        <outlet property="questionButtonOutlet" destination="epg-Sn-y4e" id="2ZB-CJ-cyk"/>
                         <outlet property="transport" destination="fo6-mP-HuF" id="aX9-oA-MsX"/>
                     </connections>
                 </viewController>
@@ -1440,6 +1451,7 @@
     </scenes>
     <resources>
         <image name="chevron.compact.down" catalog="system" width="128" height="42"/>
+        <image name="questionmark.circle" catalog="system" width="128" height="123"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

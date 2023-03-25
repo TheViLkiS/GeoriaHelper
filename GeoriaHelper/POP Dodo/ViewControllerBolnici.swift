@@ -57,10 +57,7 @@ class ViewControllerBolnici: UIViewController {
          }
     
     @objc func addOneButtonObj() {
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerPolikliniki")
-//        self.present(vc, animated: true)
-        
+
         let vc = ForAllViewController()
         vc.nameVC = "TableViewControllerPolikliniki"
         vc.topTitleLabel = "Поликлиники"
@@ -68,10 +65,7 @@ class ViewControllerBolnici: UIViewController {
         }
     
     @objc func addTwoButtonObj() {
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerDental")
-//        self.present(vc, animated: true)
-        
+
         let vc = ForAllViewController()
         vc.nameVC = "TableViewControllerDental"
         vc.topTitleLabel = "Стоматология"
@@ -79,10 +73,7 @@ class ViewControllerBolnici: UIViewController {
     }
     
     @objc func addThreeButtonObj() {
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerStrahovki")
-//        self.present(vc, animated: true)
-        
+ 
         let vc = ForAllViewController()
         vc.nameVC = "TableViewControllerStrahovki"
         vc.topTitleLabel = "Страхование"

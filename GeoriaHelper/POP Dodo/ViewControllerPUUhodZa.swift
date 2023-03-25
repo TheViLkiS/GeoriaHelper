@@ -69,18 +69,9 @@ class ViewControllerPUUhodZa: UIViewController {
         
         
         
-        
-        //            addOneButton()
-        //            addTwoButton()
-        //            addThreeButton()
-        //            addFourButton()
-        //            addFiveButton()
     }
     @objc func addOneButtonObj() {
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerSaloniKras")
-//        self.present(vc, animated: true)
-        
+
         let vc = ForAllViewController()
         vc.nameVC = "TableViewControllerSaloniKras"
         vc.topTitleLabel = "Салоны красоты"
@@ -89,9 +80,7 @@ class ViewControllerPUUhodZa: UIViewController {
     }
     
     @objc func addTwoButtonObj() {
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerBarbers")
-//        self.present(vc, animated: true)
+
         
         let vc = ForAllViewController()
         vc.nameVC = "TableViewControllerBarbers"
@@ -100,9 +89,7 @@ class ViewControllerPUUhodZa: UIViewController {
     }
     
     @objc func addThreeButtonObj() {
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerNogti")
-//        self.present(vc, animated: true)
+
         
         let vc = ForAllViewController()
         vc.nameVC = "TableViewControllerNogti"
@@ -110,20 +97,14 @@ class ViewControllerPUUhodZa: UIViewController {
         self.present(vc, animated: true)
     }
     @objc func addFourButtonObj() {
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerSpa")
-//        self.present(vc, animated: true)
-        
+
         let vc = ForAllViewController()
         vc.nameVC = "TableViewControllerSpa"
         vc.topTitleLabel = "Спа"
         self.present(vc, animated: true)
     }
     @objc func addFiveButtonObj() {
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerSportzal")
-//        self.present(vc, animated: true)
-        
+
         let vc = ForAllViewController()
         vc.nameVC = "TableViewControllerSportzal"
         vc.topTitleLabel = "Спортзалы"

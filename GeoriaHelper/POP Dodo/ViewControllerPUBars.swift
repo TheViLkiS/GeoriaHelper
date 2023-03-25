@@ -55,9 +55,7 @@ class ViewControllerPUBars: UIViewController {
     }
 
     @objc func addOneButtonObj() {
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerCafe")
-//        self.present(vc, animated: true)
+
         
         let vc = ForAllViewController()
         vc.nameVC = "TableViewControllerCafe"
@@ -66,9 +64,7 @@ class ViewControllerPUBars: UIViewController {
         }
     
     @objc func addTwoButtonObj() {
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerBars")
-//        self.present(vc, animated: true)
+
         
         let vc = ForAllViewController()
         vc.nameVC = "TableViewControllerBars"
@@ -77,10 +73,7 @@ class ViewControllerPUBars: UIViewController {
     }
     
     @objc func addThreeButtonObj() {
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerVegan")
-//        self.present(vc, animated: true)
-        
+
         let vc = ForAllViewController()
         vc.nameVC = "TableViewControllerVegan"
         vc.topTitleLabel = "Вегетарианские заведения"

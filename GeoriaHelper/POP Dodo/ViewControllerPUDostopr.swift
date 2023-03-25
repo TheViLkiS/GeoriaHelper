@@ -62,9 +62,7 @@ class ViewControllerPUDostopr: UIViewController {
 
         }
     @objc func addOneButtonObj() {
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerMesta")
-//        self.present(vc, animated: true)
+
         
         let vc = ForAllViewController()
         vc.nameVC = "TableViewControllerMesta"
@@ -73,10 +71,7 @@ class ViewControllerPUDostopr: UIViewController {
         }
     
     @objc func addTwoButtonObj() {
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerParkiIOzera")
-//        self.present(vc, animated: true)
-        
+
         let vc = ForAllViewController()
         vc.nameVC = "TableViewControllerParkiIOzera"
         vc.topTitleLabel = "Парки и озера"
@@ -84,20 +79,14 @@ class ViewControllerPUDostopr: UIViewController {
     }
     
     @objc func addThreeButtonObj() {
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerSobori")
-//        self.present(vc, animated: true)
-        
+
         let vc = ForAllViewController()
         vc.nameVC = "TableViewControllerSobori"
         vc.topTitleLabel = "Соборы и памятники"
         self.present(vc, animated: true)
     }
     @objc func addFourButtonObj() {
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerDrugoe")
-//        self.present(vc, animated: true)
-        
+
         let vc = ForAllViewController()
         vc.nameVC = "TableViewControllerDrugoe"
         vc.topTitleLabel = "Другое"

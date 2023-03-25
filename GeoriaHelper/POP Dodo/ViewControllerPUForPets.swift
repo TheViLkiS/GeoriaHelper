@@ -55,10 +55,7 @@ class ViewControllerPUForPets: UIViewController {
         }
     
     @objc func addOneButtonObj() {
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerVeterinar")
-//        self.present(vc, animated: true)
-        
+
         let vc = ForAllViewController()
         vc.nameVC = "TableViewControllerVeterinar"
         vc.topTitleLabel = "Ветеринарные клиники"
@@ -67,10 +64,7 @@ class ViewControllerPUForPets: UIViewController {
         }
     
     @objc func addTwoButtonObj() {
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerZoomagazin")
-//        self.present(vc, animated: true)
-        
+
         let vc = ForAllViewController()
         vc.nameVC = "TableViewControllerZoomagazin"
         vc.topTitleLabel = "Зоомагазины"
@@ -78,10 +72,7 @@ class ViewControllerPUForPets: UIViewController {
     }
     
     @objc func addThreeButtonObj() {
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerGrooming")
-//        self.present(vc, animated: true)
-        
+
         let vc = ForAllViewController()
         vc.nameVC = "TableViewControllerGrooming"
         vc.topTitleLabel = "Груминг"

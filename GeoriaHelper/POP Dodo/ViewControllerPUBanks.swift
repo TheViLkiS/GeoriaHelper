@@ -56,10 +56,7 @@ class ViewControllerPUBanks: UIViewController {
         }
     
     @objc func addOneButtonObj() {
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerBanks")
-//        self.present(vc, animated: true)
-        
+
         let vc = ForAllViewController()
         vc.nameVC = "TableViewControllerBanks"
         vc.topTitleLabel = "Банки"
@@ -67,10 +64,7 @@ class ViewControllerPUBanks: UIViewController {
         }
     
     @objc func addTwoButtonObj() {
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerFaqBanks")
-//        self.present(vc, animated: true)
-        
+
         let vc = ForAllViewController()
         vc.nameVC = "TableViewControllerFaqBanks"
         vc.topTitleLabel = "Открытие счёта"
@@ -78,10 +72,7 @@ class ViewControllerPUBanks: UIViewController {
     }
     
     @objc func addThreeButtonObj() {
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewControllerMoneyTransfer")
-//        self.present(vc, animated: true)
-        
+
         let vc = ForAllViewController()
         vc.nameVC = "TableViewControllerMoneyTransfer"
         vc.topTitleLabel = "Денежные переводы"

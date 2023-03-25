@@ -41,7 +41,54 @@ class ViewController: UIViewController {
 
     }
     
+    @IBOutlet weak var questionButtonOutlet: UIButton!
+    @IBAction func questionButton(_ sender: Any) {
+        
+        let buttonOne = UIButton(type: .system)
+        let buttonTwo = UIButton(type: .system)
+        
+        let alertVC = UIViewController()
+        
+        let alert = UIView(frame: CGRect(x: 0, y: 0, width: 300, height: 300))
+        
+        
+        let label = UILabel(frame: CGRect(x: 15, y: 0, width: 270, height: 100))
+        label.numberOfLines = 2
+        label.text = "За информацию спасибо команде чат-бота"
+        label.lineBreakStrategy = .hangulWordPriority
+        label.textAlignment = .center
+        alert.addSubview(label)
+        
+        let labelTwo = UILabel(frame: CGRect(x: 15, y: 130, width: 270, height: 100))
+        labelTwo.numberOfLines = 3
+        labelTwo.text = "По всем вопросам, пожеланиям, найденным ошибкам пишите в телеграм"
+        labelTwo.lineBreakStrategy = .hangulWordPriority
+        labelTwo.textAlignment = .center
+        alert.addSubview(labelTwo)
+        
+       
+        
+        
 
+        alert.layer.cornerRadius = 20
+        alert.center = view.center
+        alert.backgroundColor = .white
+        alertVC.modalPresentationStyle = .formSheet
+        alertVC.view.addSubview(alert)
+       
+        
+        alertVC.buttonSettingsDefault(button: buttonOne, title: "GeorgiaHelp", centerConst: 0, widthConst: 270, heightConst: 50, topConst: alert.frame.height + 40)
+        
+        alertVC.buttonSettingsDefault(button: buttonTwo, title: "Мне", centerConst: 0, widthConst: 270, heightConst: 50, topConst: alert.frame.height + 180)
+        
+        buttonOne.addTarget(self, action: #selector(addOneButtonObj), for: .touchUpInside)
+        buttonTwo.addTarget(self, action: #selector(addTwoButtonObj), for: .touchUpInside)
+
+        present(alertVC, animated: true)
+        
+        
+    }
+    
     @IBOutlet var home: UIButton!
     @IBOutlet var bar: UIButton!
     @IBOutlet var place: UIButton!
@@ -198,6 +245,21 @@ class ViewController: UIViewController {
         vc.nameVC = "TableViewControllerFavorites"
         vc.topTitleLabel = "Избранное"
         self.present(vc, animated: true)
+    }
+    
+    
+    @objc func addOneButtonObj() {
+
+        if let url = URL(string: "https://t.me/GruziaHelpBot") {
+                            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                        }
+        }
+    
+    @objc func addTwoButtonObj() {
+
+        if let url = URL(string: "https://t.me/vilkis") {
+                            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                        }
     }
     
 }
