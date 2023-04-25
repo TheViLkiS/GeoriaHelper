@@ -9,9 +9,6 @@
 /* Begin PBXBuildFile section */
 		04374CB829F7C7B300610728 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04374CBA29F7C7B300610728 /* Localizable.strings */; };
 		04374CBF29F7C93E00610728 /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04374CBE29F7C93E00610728 /* String+extension.swift */; };
-		04374CC229F7CB6300610728 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04374CC029F7CB6300610728 /* RootViewController.swift */; };
-		04374CC529F7CD3800610728 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04374CC729F7CD3800610728 /* RootViewController.xib */; };
-		04374CCD29F7CDCA00610728 /* RootViewController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04374CCC29F7CDCA00610728 /* RootViewController+UITableView.swift */; };
 		045F3A7C29F7C42600E1DF78 /* VSPopUpViewVontroller+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F3A7B29F7C42600E1DF78 /* VSPopUpViewVontroller+UI.swift */; };
 		940B522229B1EEEB001DC037 /* ForAllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940B522129B1EEEB001DC037 /* ForAllViewController.swift */; };
 		941C1CE529AF4D3D00C39BB9 /* ViewControllerTGRent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941C1CE429AF4D3D00C39BB9 /* ViewControllerTGRent.swift */; };
@@ -131,11 +128,6 @@
 		04374CBC29F7C7ED00610728 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		04374CBD29F7C7EE00610728 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		04374CBE29F7C93E00610728 /* String+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
-		04374CC029F7CB6300610728 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		04374CC629F7CD3800610728 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/RootViewController.xib; sourceTree = "<group>"; };
-		04374CC929F7CD4300610728 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/RootViewController.strings; sourceTree = "<group>"; };
-		04374CCB29F7CD4400610728 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/RootViewController.strings; sourceTree = "<group>"; };
-		04374CCC29F7CDCA00610728 /* RootViewController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RootViewController+UITableView.swift"; sourceTree = "<group>"; };
 		045F3A7B29F7C42600E1DF78 /* VSPopUpViewVontroller+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VSPopUpViewVontroller+UI.swift"; sourceTree = "<group>"; };
 		940B522129B1EEEB001DC037 /* ForAllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForAllViewController.swift; sourceTree = "<group>"; };
 		941C1CE429AF4D3D00C39BB9 /* ViewControllerTGRent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTGRent.swift; sourceTree = "<group>"; };
@@ -247,6 +239,8 @@
 		94BDB79D297A8183002577ED /* ViewControllerTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTwo.swift; sourceTree = "<group>"; };
 		94BDB79F297A8221002577ED /* DesignSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSettings.swift; sourceTree = "<group>"; };
 		94BDB7A1297D287B002577ED /* TableViewControllerHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerHome.swift; sourceTree = "<group>"; };
+		94CD065729F7EE2A00F69550 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		94CD065929F7EE3A00F69550 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		94D7C8512982823100A510CC /* Rent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rent.swift; sourceTree = "<group>"; };
 		94D7C85329828CB900A510CC /* Bars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bars.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -262,16 +256,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04374CC429F7CB6C00610728 /* RootViewController */ = {
-			isa = PBXGroup;
-			children = (
-				04374CC029F7CB6300610728 /* RootViewController.swift */,
-				04374CCC29F7CDCA00610728 /* RootViewController+UITableView.swift */,
-				04374CC729F7CD3800610728 /* RootViewController.xib */,
-			);
-			path = RootViewController;
-			sourceTree = "<group>";
-		};
 		9420AA83298968430014809B /* Dodo prepare */ = {
 			isa = PBXGroup;
 			children = (
@@ -561,7 +545,6 @@
 		947BFF222986547E0035CCED /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				04374CC429F7CB6C00610728 /* RootViewController */,
 				94BDB76B2976BC98002577ED /* ViewController.swift */,
 				94BDB79D297A8183002577ED /* ViewControllerTwo.swift */,
 			);
@@ -727,7 +710,6 @@
 			files = (
 				04374CB829F7C7B300610728 /* Localizable.strings in Resources */,
 				94BDB7742976BC99002577ED /* LaunchScreen.storyboard in Resources */,
-				04374CC529F7CD3800610728 /* RootViewController.xib in Resources */,
 				94BDB7712976BC99002577ED /* Assets.xcassets in Resources */,
 				9471754F297E7BAC00B9B4A1 /* TaskTypeCell.xib in Resources */,
 				94BDB76F2976BC98002577ED /* Main.storyboard in Resources */,
@@ -757,7 +739,6 @@
 				945008A82994226100785F3D /* TableViewControllerStrahovki.swift in Sources */,
 				94500831299019A600785F3D /* zoomagazini.swift in Sources */,
 				947BFF332986B3660035CCED /* InstantPanGestureRecognizer.swift in Sources */,
-				04374CC229F7CB6300610728 /* RootViewController.swift in Sources */,
 				9450081C298FF31900785F3D /* sobori.swift in Sources */,
 				9450083629901FB700785F3D /* operatori.swift in Sources */,
 				945008852993D7FF00785F3D /* TableViewControllerBarbers.swift in Sources */,
@@ -781,7 +762,6 @@
 				945008B82994D7A600785F3D /* TableViewControllerRentCars.swift in Sources */,
 				945008BC2994D7CD00785F3D /* TableViewControllerFaqCars.swift in Sources */,
 				945008582991518900785F3D /* faqCars.swift in Sources */,
-				04374CCD29F7CDCA00610728 /* RootViewController+UITableView.swift in Sources */,
 				945008832993D7F200785F3D /* TableViewControllerSaloniKras.swift in Sources */,
 				9420AA7F298962CB0014809B /* TableViewControllerTGRent.swift in Sources */,
 				945008752992BCFF00785F3D /* TableViewControllerMesta.swift in Sources */,
@@ -866,21 +846,12 @@
 			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
-		04374CC729F7CD3800610728 /* RootViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				04374CC629F7CD3800610728 /* Base */,
-				04374CC929F7CD4300610728 /* en */,
-				04374CCB29F7CD4400610728 /* ru */,
-			);
-			name = RootViewController.xib;
-			sourceTree = "<group>";
-		};
 		94BDB76D2976BC98002577ED /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				94BDB76E2976BC98002577ED /* Base */,
 				04374CBB29F7C7ED00610728 /* ru */,
+				94CD065729F7EE2A00F69550 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -890,6 +861,7 @@
 			children = (
 				94BDB7732976BC99002577ED /* Base */,
 				04374CBC29F7C7ED00610728 /* ru */,
+				94CD065929F7EE3A00F69550 /* en */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

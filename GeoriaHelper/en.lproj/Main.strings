@@ -1,0 +1,123 @@
+
+/* Class = "UIButton"; configuration.title = "Развлечения"; ObjectID = "0he-5y-2Dk"; */
+"0he-5y-2Dk.configuration.title" = "Развлечения";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "0he-5y-2Dk"; */
+"0he-5y-2Dk.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "СПРАВОЧНИК"; ObjectID = "11c-qz-Pd4"; */
+"11c-qz-Pd4.text" = "СПРАВОЧНИК";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "4Yf-nb-frc"; */
+"4Yf-nb-frc.configuration.title" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "4Yf-nb-frc"; */
+"4Yf-nb-frc.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "5Tj-bI-EaW"; */
+"5Tj-bI-EaW.configuration.title" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "5Tj-bI-EaW"; */
+"5Tj-bI-EaW.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "5Tv-4Z-Nb5"; */
+"5Tv-4Z-Nb5.configuration.title" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "5Tv-4Z-Nb5"; */
+"5Tv-4Z-Nb5.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "8m8-8j-2lj"; */
+"8m8-8j-2lj.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "Ct2-0y-fKN"; */
+"Ct2-0y-fKN.configuration.title" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Ct2-0y-fKN"; */
+"Ct2-0y-fKN.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Аренда жилья"; ObjectID = "IdA-SV-X5K"; */
+"IdA-SV-X5K.configuration.title" = "Аренда жилья";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "IdA-SV-X5K"; */
+"IdA-SV-X5K.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Достопримечательности"; ObjectID = "LPE-vM-5M6"; */
+"LPE-vM-5M6.configuration.title" = "Достопримечательности";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "LPE-vM-5M6"; */
+"LPE-vM-5M6.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Медицинская помощь"; ObjectID = "NEr-5o-zlO"; */
+"NEr-5o-zlO.configuration.title" = "Медицинская помощь";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "NEr-5o-zlO"; */
+"NEr-5o-zlO.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "TYj-gH-Qpo"; */
+"TYj-gH-Qpo.configuration.title" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "TYj-gH-Qpo"; */
+"TYj-gH-Qpo.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Здоровье, красота"; ObjectID = "U6l-na-WNW"; */
+"U6l-na-WNW.configuration.title" = "Здоровье, красота";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "U6l-na-WNW"; */
+"U6l-na-WNW.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Школы, детские сады"; ObjectID = "WSL-83-qc5"; */
+"WSL-83-qc5.configuration.title" = "Школы, детские сады";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "WSL-83-qc5"; */
+"WSL-83-qc5.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Финансы"; ObjectID = "aB7-vd-rYd"; */
+"aB7-vd-rYd.configuration.title" = "Финансы";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "aB7-vd-rYd"; */
+"aB7-vd-rYd.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "aQc-ag-q6p"; */
+"aQc-ag-q6p.configuration.title" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "aQc-ag-q6p"; */
+"aQc-ag-q6p.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "экспата"; ObjectID = "de6-sd-qVq"; */
+"de6-sd-qVq.text" = "экспата";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "epg-Sn-y4e"; */
+"epg-Sn-y4e.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Транспорт"; ObjectID = "fo6-mP-HuF"; */
+"fo6-mP-HuF.configuration.title" = "Транспорт";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "fo6-mP-HuF"; */
+"fo6-mP-HuF.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Тбилиси"; ObjectID = "j9F-Vd-nsq"; */
+"j9F-Vd-nsq.configuration.title" = "Тбилиси";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "j9F-Vd-nsq"; */
+"j9F-Vd-nsq.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Для питомцев"; ObjectID = "jJh-cF-6D7"; */
+"jJh-cF-6D7.configuration.title" = "Для питомцев";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "jJh-cF-6D7"; */
+"jJh-cF-6D7.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Авто"; ObjectID = "lAm-x6-RS7"; */
+"lAm-x6-RS7.configuration.title" = "Авто";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "lAm-x6-RS7"; */
+"lAm-x6-RS7.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Кафе, бары, рестораны"; ObjectID = "xib-JK-OIy"; */
+"xib-JK-OIy.configuration.title" = "Кафе, бары, рестораны";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "xib-JK-OIy"; */
+"xib-JK-OIy.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "y3l-KD-e3l"; */
+"y3l-KD-e3l.normalTitle" = "Button";
