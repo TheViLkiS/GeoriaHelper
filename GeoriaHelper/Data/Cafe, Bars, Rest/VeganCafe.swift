@@ -22,7 +22,7 @@ func veganCafePrepare() {
 
 }
 
-var tbiliSio = Place(name: "Tbili Sio", description: "tbiliSio.description".localized")
+//var tbiliSio = Place(name: "Tbili Sio", description: "tbiliSio.description".localized")
 var tbiliSio = Place(name: "Tbili Sio", description: "Расположение просто великолепное - самый центр города! Меню предлагает широкий выбор веганских и вегетарианских, супер вкусных блюд.Мы советуем попробовать хачапури, хумус фалафель и супчик! Вы можете найти все, что вам нравится в вегетарианстве. Из напитков - крафтовое пиво, домашний лимонад и кофе, точно не оставят равнодушными", url: "https://www.tripadvisor.ru/Restaurant_Review-g294195-d21130647-Reviews-Tbili_Sio-Tbilisi.html", googleUrl: "https://goo.gl/maps/m7GHbDasJrRoKnRMA", yandexUrl: "https://yandex.com.ge/maps/-/CCU7ZQfqGD")
 
 var livingVino = Place(name: "Living Vino", description: "Идеально для тех, кто любит все натуральное и полезное. Многие посетители приходят сюда, чтобы попробовать вкусно приготовленные пироги, харчо и тальятелле. Большой выбор органических вин, также придется вам по вкусу", instagramUrl: "https://www.instagram.com/livingvinogeorgia/", facebookUrl: "https://www.facebook.com/livingvino", url: "https://www.tripadvisor.ru/Restaurant_Review-g294195-d20295713-Reviews-Living_Vino-Tbilisi.html", googleUrl: "https://goo.gl/maps/upLQnnJ7SZFtLKJm8", yandexUrl: "https://yandex.com.ge/maps/-/CCU7ZQw6LB")
