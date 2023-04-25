@@ -9,6 +9,7 @@ import Foundation
 
 var bars = [Place]()
 
+//TODO: можно сделать ленивую инициализацию синглтона и сложить все это в конструкторе класса
 func barsPrepare() {
     bars.append(vintages)
     bars.append(vinoWineBar)
@@ -24,6 +25,7 @@ func barsPrepare() {
     
    
 }
+//TODO: лучше делать не через глобальные переменные а через статик поля класса
 
 
 var vintages = Place(name: "8000 Vintages",

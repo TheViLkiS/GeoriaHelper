@@ -6,6 +6,10 @@
 //
 
 import UIKit
+//TODO: нужен префикс VSPUBarsViewController
+//TODO: неправильное Наименование классаов, по дефолту должно быть PUBarsViewController
+//TODO: важно поставить linter https://github.com/realm/SwiftLint
+//TODO: бизнес логику и верстку стоит разделять на отдельные файлы, даже если хочется верстать в коде лучше делать это в extension ViewControllerPUBars {}
 
 class ViewControllerPUBars: UIViewController {
 
@@ -24,7 +28,7 @@ class ViewControllerPUBars: UIViewController {
         addChevronButton()
         
         buttonSettingsDefault(button: buttonOne,
-                              title: "Кафе, Рестораны",
+                              title: "Кафе, Рестораны", //TODO: русский текст, я бы написал "Cafe Restaurants".Localized // Localized надо реализовать отдельным методом в расширениях
                               centerConst: 0,
                               widthConst: 300,
                               heightConst: 55,
@@ -38,12 +42,12 @@ class ViewControllerPUBars: UIViewController {
                               topConst: 125)
         
         buttonSettingsDefault(button: buttonThree,
-                              title: "Вегетарианские заведения",
+                              title: "vegenterian cafe".localized,
                               centerConst: 0,
                               widthConst: 300,
                               heightConst: 55,
                               topConst: 200)
-        
+        //  title: "vegenterian cafe".localized,
         buttonSettingsBack(button: buttonBack, title: "Назад", centerConst: 0, widthConst: 150, heightConst: 55)
 
         

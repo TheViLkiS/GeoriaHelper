@@ -18,22 +18,27 @@ class TableViewControllerAfisha: UITableViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       
-       
-  
-
-         // 1. получение значение типа UINib, соответствующее xib-файлу кастом- ной ячейки
-         let cellTypeNib = UINib(nibName: "TaskTypeCell", bundle: nil)
-         // 2. регистрация кастомной ячейки в табличном представлении tableView.register(cellTypeNib, forCellReuseIdentifier: "TaskTypeCell")
-         tableView.register(cellTypeNib, forCellReuseIdentifier: "TaskTypeCell")
+        
+        
+        
+        //TODO: при инициализации из ниба (что я считаю более удобным чем сториборды) можно написать код который опустит имя файла
+        //TODO: и довести код до  let cell = self.table.dequeueReusableCellWithType(EmployeeCell.self)
+        //TODO: без необходимости  tableView.register
+        //TODO: https://github.com/Tern321/ELIOSAutoTest/blob/main/ELIOSAutoTest/extensions/UITableView.swift
+        
+        // 1. получение значение типа UINib, соответствующее xib-файлу кастом- ной ячейки
+        let cellTypeNib = UINib(nibName: "TaskTypeCell", bundle: nil)
+        // 2. регистрация кастомной ячейки в табличном представлении tableView.register(cellTypeNib, forCellReuseIdentifier: "TaskTypeCell")
+        tableView.register(cellTypeNib, forCellReuseIdentifier: "TaskTypeCell")
         
         addFooterButton(tableView)
     }
-
-    // MARK: - Table view data source
-
     
+    // MARK: - Table view data source
+    
+    //TODO: обычно специфичный код выносят в
+    // extension TableViewControllerAfisha: UITableViewDelegate, UITableViewDataSource
+    //TODO: и если кода много - в отдельный файл
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections

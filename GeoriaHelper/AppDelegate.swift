@@ -20,6 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             userDefaults.set(["": true], forKey: "favoriteArrayString")
         }
 
+        //TODO: такого быть не должно, раз уж код однотипный можно вынести его в отдельный класс
+        //TODO: далее, эти данные точно не могут быть загружены из json? так то это плохой тон задавать их в коде
         barsPrepare()
         rentPrepare()
         rentPrepareTelegram()

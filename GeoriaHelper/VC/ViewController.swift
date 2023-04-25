@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+//TODO: название класса должно быть более конкретным, возможно это RootViewController
 class ViewController: UIViewController {
     
     override func viewDidLoad() {
@@ -41,7 +41,8 @@ class ViewController: UIViewController {
 
     }
     
-    @IBOutlet weak var questionButtonOutlet: UIButton!
+    @IBOutlet weak var questionButtonOutlet: UIButton! //TODO: аутлеты должны быть стронг по возможности, иначе иногда будут креши когда UI выгрузили из памяти
+    
     @IBAction func questionButton(_ sender: Any) {
         
         let buttonOne = UIButton(type: .system)
@@ -88,7 +89,7 @@ class ViewController: UIViewController {
         
         
     }
-    
+    //TODO: чередование порядка функций и переменных, обычно все переменные сверху
     @IBOutlet var home: UIButton!
     @IBOutlet var bar: UIButton!
     @IBOutlet var place: UIButton!
@@ -219,6 +220,10 @@ class ViewController: UIViewController {
         sender.animateButtonUp()
         //code to execute when button pressed
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        //TODO: если правильно написать расширекния можно будет довести эту строку до чего то вроде
+        //TODO: let vc = storyboard.instantiateViewController(ViewControllerTwo)
+        //TODO: тогда при очередном рефакторинге этот код не сломается
+        
         let vc = storyboard.instantiateViewController(withIdentifier: "ViewControllerTwo")
         self.present(vc, animated: true)
     }
@@ -250,6 +255,10 @@ class ViewController: UIViewController {
     
     @objc func addOneButtonObj() {
 
+        //TODO: еще по наименованию классов и файлов, лучше перед ними ставить некий префикс допустим VS т.е. будет VSTelegramLinksManager
+        //TODO: тогда ты не столкнешься с классом имеющим такое же название в сторонней библиотеке и не получишь проблемы на ровном месте
+        //TODO: это повелось с objective c, но в свифте тоже лишним не будет
+        //TODO: по хорошему эта ссылка должна быть статик переменной в классе отвечающем за ссылки на тг, т.е. к примеру VSTelegramLinksManager.GruziaHelpBot
         if let url = URL(string: "https://t.me/GruziaHelpBot") {
                             UIApplication.shared.open(url, options: [:], completionHandler: nil)
                         }

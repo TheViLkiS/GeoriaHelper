@@ -163,6 +163,7 @@ extension UIViewController {
     }
 
     @objc func buttonTouchUpOutside(_ sender: UIButton) {
+        //TODO: нужны ли эти комменты?
         //Connected with Touch Up Outside Action
         //if touch moved away from button
         sender.animateButtonUp()

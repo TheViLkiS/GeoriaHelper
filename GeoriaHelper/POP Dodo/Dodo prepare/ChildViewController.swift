@@ -38,13 +38,14 @@ class ChildViewController: UIViewController {
             button.addTarget(self, action: #selector(dismissSelf), for: .touchUpInside)
             button.tintColor = .black
             buttonSettings(a: button)
+            //TODO: шрифт можно вынести константой в класс отвечающий за шрифты т.е. VSFonts.MarkerFeltWide
             button.titleLabel?.font = UIFont(name: "Marker Felt Wide", size: 17.0)
             view.addSubview(button)
             
             
             
             
-            
+            //TODO: xcode умеет править пробелы в выделенном тексте по сочетанию ctrl (или cmd могу путать) + i
             button.translatesAutoresizingMaskIntoConstraints = false
             NSLayoutConstraint.activate([
                 button.centerXAnchor.constraint(equalTo: view.centerXAnchor),
